@@ -1,0 +1,1235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="Frankie">
+  <meta name="author" content="Frankie">
+  <!-- <link rel="icon" href="../../favicon.ico"> -->
+  <title>Frankies</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/lightbox.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/screen.css" rel="stylesheet">
+  <script src="js/ie-emulation-modes-warning.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+      <div class="container">
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#future">Предстоящие</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#about_us">О Нас</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a class="order-btn" href="/" role="button" data-toggle="modal" data-target="#order_modal">ЗАКАЗАТЬ</a>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+        <section class="main-content">
+          <h1>Мы открылись!</h1>
+          <div class="gallery-look">Загляните в нашу галлерею, там много разных вкуснях,<br> которые Вы можете заказать и скушать :)</div>
+          <div class="make-order">
+            <a class="order-btn" href="/" role="button" data-toggle="modal" data-target="#order_modal">ЗАКАЗАТЬ</a>
+          </div>
+        </section>
+        <section class="next-holidays">
+          <a id="future"></a>
+          <h1>ПРЕДСТОЯЩИЕ</h1>
+          <p class="after-heading">We’re finally open!</p>
+          <p class="after-heading">Visit our gallery to see our products and our blog to find out more about us!</p>
+          <div class="row">
+            <div class="col-md-6 col-lg-6 text-right">
+              <div class="holiday-container">
+                <img src="img/easter.png" alt="easter" class="img-responsive" >
+                <div class="holiday-name-wrapper">
+                  <div class="holiday-name">
+                    <h3>Праздник Святой Пасхи</h3>
+                    <p>бла бла бла бла</p>
+                    <p>и уже готовы к предзаказу</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6  text-left">
+              <div class="holiday-container">
+                <img src="img/christmas-holiday.png" alt="christmas-holiday" class="img-responsive" >
+                <div class="holiday-name-wrapper">
+                  <div class="holiday-name">
+                    <h3>Праздник Святой Пасхи</h3>
+                    <p>бла бла бла бла</p>
+                    <p>и уже готовы к предзаказу</p>
+                  </div>
+                </div>
+              </div>
+              <div class="holiday-container">
+                <img src="img/eights-marсh.png" alt="eights-marсh" class="img-responsive" >
+                <div class="holiday-name-wrapper">
+                  <div class="holiday-name">
+                    <h3>Праздник Святой Пасхи</h3>
+                    <p>бла бла бла бла</p>
+                    <p>и уже готовы к предзаказу</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- col-md-6 col-lg-6 -->
+          </div><!-- row end -->
+        </section><!--  next-holidays end -->
+        <a id="gallery"></a>
+        <section class="product-gallery">
+          <h1>ГАЛЕРЕЯ</h1>
+          <p class="after-heading">We’re finally open!</p>
+          <p class="after-heading">Visit our gallery to see our products and our blog to find out more about us!</p>
+          <ul class="gallery-menu">
+            <li class="clicked"><a href="#" class="ging">имбирные пряники</a></li>
+            <li><a href="#" class="zf">зефир</a></li>
+            <li><a href="#" class="cap">капкейки</a></li>
+            <li><a href="#" class="chok">шоколадное печенье</a></li>
+          </ul>
+
+    <!-- Carousel
+    ================================================== -->
+    <div class="wrapper ginger">
+      <div id="myCarouselGinger" class="carousel slide" data-ride="carousel">
+        <!-- Indicators --> 
+        <div class="carousel-inner" role="listbox">
+          <div class="item active text-center">
+           <div class="row">
+             <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+               <div class="gallery-image-container">
+                 <a href="img/chicken.png" data-lightbox="roadtrip-ginger">
+                  <img class="img-responsive"  src="img/chicken.png" alt="">
+                  <div class="gallery-loop"></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/eggs.png" data-lightbox="roadtrip-ginger"><div class="lb-wrapper">
+               <img class="img-responsive"  src="img/eggs.png" alt="">
+             </div><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/rebbit.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/rebbit.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/hv.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/hv.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/bear.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/bear.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/oneyear.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/oneyear.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/flovers.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/flovers.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/box.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/box.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/skunk.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/skunk.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/years60.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/years60.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/years26.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/years26.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/flower.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/flower.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/heart.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/heart.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/rebbitpink.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/rebbitpink.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/present.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/present.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/sufle.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/sufle.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+         </div>
+       </div>
+       <div class="item">
+         <div class="row">
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/chicken.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/chicken.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/eggs.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/eggs.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/rebbit.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/rebbit.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/hv.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/hv.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/bear.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/bear.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/oneyear.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/oneyear.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/flovers.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/flovers.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/box.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/box.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/skunk.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/skunk.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/years60.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/years60.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/years26.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/years26.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/flower.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/flower.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/heart.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/heart.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/rebbitpink.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/rebbitpink.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/present.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/present.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/sufle.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/sufle.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+         </div>
+       </div>
+       <div class="item">
+         <div class="row">
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/chicken.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/chicken.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/eggs.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/eggs.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/rebbit.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/rebbit.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/hv.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/hv.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/bear.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/bear.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/oneyear.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/oneyear.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/flovers.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/flovers.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/box.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/box.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/skunk.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/skunk.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/years60.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/years60.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/years26.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/years26.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/flower.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/flower.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/heart.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/heart.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/rebbitpink.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/rebbitpink.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/present.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/present.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+           <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+             <div class="gallery-image-container"><a href="img/sufle.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/sufle.png" alt=""><div class="gallery-loop"></div></a></div>
+           </div>
+         </div>
+       </div>
+     </div><!-- /ginger -->
+   </div><!-- /.carousel -->
+   <div class="left-arrow-wrapper">
+    <a class="left carousel-control pull-left" href="#myCarouselGinger" role="button" data-slide="prev">
+      <span class="sr-only">&#8592; Previous</span>
+    </a>
+  </div>
+  <div class="right-arrow-wrapper">
+    <a class="right carousel-control pull-right" href="#myCarouselGinger" role="button" data-slide="next">
+      <span class="sr-only">Next&#8594;</span>
+    </a>
+  </div>
+</div>
+<!-- /ginger -->
+<div class="wrapper zefir">
+  <div id="myCarouselZefir" class="carousel slide" data-ride="carousel">
+    <!-- Indicators --> 
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/chicken.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/chicken.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/eggs.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/eggs.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbit.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/rebbit.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/hv.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/hv.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/bear.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/bear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/oneyear.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/oneyear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flovers.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/flovers.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/box.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/box.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/skunk.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/skunk.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years60.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/years60.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years26.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/years26.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flower.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/flower.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/heart.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/heart.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbitpink.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/rebbitpink.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/present.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/present.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/sufle.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/sufle.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/chicken.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/chicken.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/eggs.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/eggs.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbit.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/rebbit.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/hv.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/hv.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/bear.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/bear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/oneyear.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/oneyear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flovers.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/flovers.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/box.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/box.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/skunk.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/skunk.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years60.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/years60.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years26.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/years26.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flower.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/flower.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/heart.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/heart.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbitpink.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/rebbitpink.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/present.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/present.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/sufle.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/sufle.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/chicken.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/chicken.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/eggs.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/eggs.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbit.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/rebbit.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/hv.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/hv.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/bear.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/bear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/oneyear.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/oneyear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flovers.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/flovers.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/box.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/box.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/skunk.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/skunk.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years60.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/years60.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years26.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/years26.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flower.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/flower.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/heart.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/heart.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbitpink.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/rebbitpink.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/present.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/present.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/sufle.png" data-lightbox="roadtrip-zefir"><img class="img-responsive" src="img/sufle.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+     </div>
+   </div><!-- /ginger -->
+ </div><!-- /.carousel -->
+ <div class="left-arrow-wrapper">
+  <a class="left carousel-control pull-left" href="#myCarouselZefir" role="button" data-slide="prev">
+    <span class="sr-only">&#8592; Previous</span>
+  </a>
+</div>
+<div class="right-arrow-wrapper">
+  <a class="right carousel-control pull-right" href="#myCarouselZefir" role="button" data-slide="next">
+    <span class="sr-only">Next&#8594;</span>
+  </a>
+</div>
+</div><!-- /zefir -->
+<div class="wrapper cap-cake">
+  <div id="myCarouselCap" class="carousel slide" data-ride="carousel">
+    <!-- Indicators --> 
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/chicken.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/chicken.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/eggs.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/eggs.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbit.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/rebbit.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/hv.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/hv.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/bear.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/bear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/oneyear.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/oneyear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flovers.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/flovers.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/box.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/box.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/skunk.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/skunk.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years60.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/years60.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years26.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/years26.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flower.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/flower.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/heart.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/heart.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbitpink.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/rebbitpink.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/present.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/present.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/sufle.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/sufle.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/chicken.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/chicken.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/eggs.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/eggs.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbit.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/rebbit.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/hv.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/hv.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/bear.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/bear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/oneyear.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/oneyear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flovers.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/flovers.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/box.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/box.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/skunk.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/skunk.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years60.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/years60.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years26.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/years26.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flower.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/flower.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/heart.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/heart.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbitpink.png" data-lightbox="roadtrip-ginger"><img class="img-responsive" src="img/rebbitpink.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/present.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/present.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/sufle.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/sufle.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/chicken.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/chicken.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/eggs.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/eggs.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbit.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/rebbit.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/hv.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/hv.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/bear.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/bear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/oneyear.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/oneyear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flovers.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/flovers.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/box.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/box.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/skunk.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/skunk.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years60.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/years60.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years26.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/years26.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flower.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/flower.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/heart.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/heart.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbitpink.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/rebbitpink.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/present.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/present.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/sufle.png" data-lightbox="roadtrip-cap-cake"><img class="img-responsive" src="img/sufle.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div><!-- /.carousel -->
+ <div class="left-arrow-wrapper">
+  <a class="left carousel-control pull-left" href="#myCarouselCap" role="button" data-slide="prev">
+    <span class="sr-only">&#8592; Previous</span>
+  </a>
+</div>
+<div class="right-arrow-wrapper">
+  <a class="right carousel-control pull-right" href="#myCarouselCap" role="button" data-slide="next">
+    <span class="sr-only">Next&#8594;</span>
+  </a>
+</div>
+</div> <!-- /cap-cake -->
+<div class="wrapper chocolate-cookies">
+  <div id="myCarouselChok" class="carousel slide" data-ride="carousel">
+    <!-- Indicators --> 
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/chicken.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/chicken.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/eggs.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/eggs.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbit.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/rebbit.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/hv.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/hv.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/bear.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/bear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/oneyear.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/oneyear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flovers.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/flovers.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/box.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/box.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/skunk.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/skunk.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years60.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/years60.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years26.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/years26.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flower.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/flower.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/heart.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/heart.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbitpink.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/rebbitpink.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/present.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/present.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/sufle.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/sufle.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/chicken.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/chicken.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/eggs.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/eggs.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbit.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/rebbit.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/hv.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/hv.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/bear.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/bear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/oneyear.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/oneyear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flovers.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/flovers.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/box.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/box.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/skunk.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/skunk.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years60.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/years60.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years26.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/years26.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flower.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/flower.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/heart.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/heart.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbitpink.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/rebbitpink.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/present.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/present.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/sufle.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/sufle.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/chicken.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/chicken.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/eggs.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/eggs.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbit.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/rebbit.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/hv.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/hv.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/bear.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/bear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/oneyear.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/oneyear.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flovers.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/flovers.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/box.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/box.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/skunk.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/skunk.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years60.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/years60.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/years26.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/years26.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/flower.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/flower.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/heart.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/heart.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/rebbitpink.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/rebbitpink.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/present.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/present.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+         <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+           <div class="gallery-image-container"><a href="img/sufle.png" data-lightbox="roadtrip-chocolate-cookies"><img class="img-responsive" src="img/sufle.png" alt=""><div class="gallery-loop"></div></a></div>
+         </div>
+       </div>
+     </div>
+     <div class="left-arrow-wrapper">
+      <a class="left carousel-control pull-left" href="#myCarouselChok" role="button" data-slide="prev">
+        <span class="sr-only">&#8592; Previous</span>
+      </a>
+    </div>
+    <div class="right-arrow-wrapper">
+      <a class="right carousel-control pull-right" href="#myCarouselChok" role="button" data-slide="next">
+        <span class="sr-only">Next&#8594;</span>
+      </a>
+    </div>
+  </div><!-- /chocolate-cookies -->
+</div><!-- /.carousel -->
+
+</div> <!-- /chocolate-cookies -->
+</section><!-- /product-gallery -->
+<a id="about_us"></a>
+<section class="about-us">
+  <h1>О НАС</h1>
+  <p class="after-heading">We’re finally open!</p>
+  <p class="after-heading">Visit our gallery to see our products and our blog to find out more about us!</p>
+  <div class="row">
+    <div class="col-md-4 col-lg-4 text-center">
+      <div class="about-container">
+       <div class="rounded-image">
+        <img src="img/leaf.png" alt="" class="img-responsive">
+      </div>
+      <h3>All natural</h3>
+      <p>Lorem ipsum dolor sit amet,<br>
+        consectetur adipisicing elit</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-4 text-center">
+      <div class="about-container">
+        <div class="rounded-image">
+          <img src="img/hand.png" alt="" class="img-responsive">
+        </div>
+        <h3>Handmade</h3>
+        <p>Lorem ipsum dolor sit amet,<br>
+          consectetur adipisicing elit</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 text-center">
+        <div class="about-container">
+          <div class="rounded-image">
+            <img src="img/cake.png" alt="" class="img-responsive">
+          </div>
+          <h3>Made with love</h3>
+          <p>Lorem ipsum dolor sit amet,<br>
+            consectetur adipisicing elit</p>
+          </div>
+        </div>
+      </div>
+      <p class="bottom-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </section>
+    <a id="news"></a>
+    <section class="our_news">
+      <h1>НОВОСТИ</h1>
+      <p class="after-heading">Наши планы, будущие и реализовавшиеся.</p>
+      <div class="row">
+        <div class="col-md-4 col-lg-4 text-center">
+          <div class="news-container">
+            <img src="img/kiev.png" alt="kiev">
+            <h3>Frankies bakery в лавре</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+            <div class="news-details">
+              <span class="date">01.05.2015</span>
+              <span><a href="#" data-toggle="modal" data-target="#news-one">Подробнее</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 text-center">
+          <div class="news-container">
+            <img src="img/mvc.png" alt="mvc.">
+            <h3>Frankies bakery в МВЦ</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            <div class="news-details">
+              <span class="date">01.05.2015</span>
+              <span><a href="#" data-toggle="modal" data-target="#news-two">Подробнее</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 text-center">
+          <div class="news-container">
+            <img src="img/opening.png" alt="opening">
+            <h3>Мы открылись!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="news-details">
+              <span class="date">01.05.2015</span>
+              <span><a href="#" data-toggle="modal" data-target="#news-three">Подробнее</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a id="reviews"></a>
+    </section> <!-- /news- -->
+    <section class="review_container">
+     <h1>ОТЗЫВЫ</h1>
+     <p class="after-heading">Что о нас говорят люди</p>
+      <!-- Carousel
+      ================================================== -->
+      <div id="review" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#review" data-slide-to="0" class="active"></li>
+          <li data-target="#review" data-slide-to="1"></li>
+          <li data-target="#review" data-slide-to="2"></li>
+          <li data-target="#review" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="container">
+              <img src="img/user_pic.png" alt="">
+              <p class="author-rev">Yana Hapchuk</p>
+              <p  class="author-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="container">
+                <img src="img/user_pic.png" alt="">
+                <p class="author-rev">Yana Hapchuk</p>
+                <p  class="author-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="container">
+                 <img src="img/user_pic.png" alt="">
+                 <p class="author-rev">Yana Hapchuk</p>
+                 <p  class="author-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="container">
+                  <img src="img/user_pic.png" alt="">
+                  <p class="author-rev">Yana Hapchuk</p>
+                  <p class="author-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.carousel -->
+          </section>
+          <a id="contacts"></a>
+          <section class="contact_us">
+           <h1>КОНТАКТЫ</h1>
+           <p class="after-heading">Здесь Вы можете оставить свой отзыв, задать вопрос или заказать наших вкуснях.</p>
+           <form class="form-inline">
+             <div class="row">
+              <div class="col-md-4 col-lg-4 text-center">
+                <div class="form-group">
+                 <label for="exampleInputName3">Имя</label>
+                 <input type="text" class="form-control" id="exampleInputName3" placeholder="Яна">
+               </div>
+             </div>
+             <div class="col-md-4 col-lg-4 text-center">
+              <div class="form-group">
+                <label for="exampleInputTel">Телефон</label>
+                <input type="tel" class="form-control" id="exampleInputTel" placeholder="+380931154756">
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4 text-center">
+              <div class="form-group">
+                <label for="exampleInputEmail3">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="example@gmail.com" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <div class="form-group order_details">
+               <label for="order_details">Сообщение</label>
+               <textarea class="form-control" id="order_details" placeholder="Для того что-бы совершить заказ, опишите его как можно более детально или напишите артикулы продуктов которые Вас заинтересовали, с исправлениями которые Вы хотите видеть на своем изделии." ></textarea>
+             </div>
+           </div>
+           <div class="col-md-12 col-lg-12 text-center"><button type="submit" class="order-btn" data-toggle="modal" data-target="#email_success_modal">ОТПРАВИТЬ</button></div>
+         </div>
+       </form>
+     </section>
+     <footer>
+       <div class="row">
+         <div class="col-md-4 col-lg-4">
+           <ul class="contacts">
+             <li><a href="tel:+380931154745">+380931154745</a></li>
+             <li><a href="tel:+380954546534">+380954546534</a></li>
+             <li><a href="email:Frankiesbakery@gmail.com">Frankiesbakery@gmail.com</a></li>
+           </ul>
+         </div>
+         <div class="col-md-4 col-lg-4 text-center">
+           <p>Frankie’s bakery All rights reserved 2016<br>Designed with love</p>
+         </div>
+         <div class="col-md-4 col-lg-4 text-right">
+           <ul class="social">
+             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+             <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+           </ul>
+         </div>
+       </div>
+     </footer>
+     <!-- Modals start-->
+     <div class="modal fade" id="order_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog order" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">заказ продукции</h4>
+          </div>
+          <div class="modal-body">
+            <form id="customer_order">
+              <div class="form-group">
+                <label for="exampleInputName2">Имя</label>
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Яна">
+              </div>
+              <div class="form-group">
+                <label for="order_telefon">Телефон</label>
+                <input type="tel" class="form-control" id="order_telefon" placeholder="+380931154756" name="telefon">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail2">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="example@gmail.com" required name="email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail2">Детали заказа</label>
+                <textarea class="form-control" rows="3" id="order_details_text" placeholder="Для того что-бы совершить заказ, опишите его как можно более детально или выберите артикулы продуктов которые Вас заинтересовали, с исправлениями которые Вы хотите видеть на своем изделии." required></textarea>
+              </div>
+              <button type="submit" id="order_success" class="btn btn-default" data-toggle="modal" data-target="#order_success_modal">заказать</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="order_success_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog order_success" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="img/girl.png" alt="">
+            <h4 class="modal-title">Спасибо за Ваш заказ!</h4>
+            <div class="success_text">В ближайшее время мы свяжемся с<br> Вами что-бы уточнить  детали.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="email_success_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog email_success" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="img/mail.png" alt="">
+            <h4 class="modal-title">Письмо успешно отправлено!</h4>
+            <div class="success_text">Спасибо, что Вы с нами! Вот Вам мишка</div>
+            <img src="img/littlebear.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="news-one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog frankies-news" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Frankies bakery в лавре</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/news-img.png" class="img-responsive" alt="">
+            <p class="news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            <div class="news-details">
+              <span class="date pull-left">01.05.2015</span>
+              <div class="social_in_news pull-right">
+              <a href="/"><img src="img/fb.png" alt="/"></a>
+              <a href="/"><img src="img/vk.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade frankies-news" id="news-two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog frankies-news" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Frankies bakery в МВЦ</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/news-img.png" class="img-responsive"  alt="">
+            <p class="news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            <div class="news-details">
+              <span class="date pull-left">01.05.2015</span>
+              <div class="social_in_news pull-right">
+              <a href="/"><img src="img/fb.png" alt="/"></a>
+              <a href="/"><img src="img/vk.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="news-three" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog frankies-news" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Мы открылись!</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/news-img.png" class="img-responsive"  alt="">
+            <p class="news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="news-details">
+              <span class="date pull-left">01.05.2015</span>
+              <div class="social_in_news pull-right">
+              <a href="/"><img src="img/fb.png" alt="/"></a>
+              <a href="/"><img src="img/vk.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modals end-->
+  </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.carousel').carousel({
+          interval: 99999990000
+        });
+        $('.carousel').carousel('cycle');
+        $('.carousel').carousel('pause');
+
+        // validate
+
+        $("#customer_order").validate();
+
+      });
+    </script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+  </html>
