@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="<?= Yii::$app->charset ?>"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="stylesheets/screen.css">
+</head>
+<body>
+<div class="page-wrapper">
+  <!-- Small Navigation -->
+  <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="medium">
+    <a class="logo-small show-for-small-only logo" href="#">lillyloans</a>
+    <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title">Menu</div>
+  </div>
+  
+  <!-- Medium-Up Navigation -->
+  <nav class="top-bar" id="nav-menu">
+  
+    <div class="logo-wrapper hide-for-small-only">
+      <div class="logo">lillyloans</div>
+    </div>
+  
+    <!-- Left Nav Section -->
+    <div class="top-bar-left">
+      <ul class="vertical medium-horizontal menu">
+        <li><a href="home.html" class="active">Homepage</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="apply-now.html">Apply Now</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- content start -->
+  <div class="banner-on-main">
+    <div class="main-info">
+      <ul>
+        <li>Payday Loans from £50 to £2,000</li>
+        <li>Simple 3 Month Loan Solutions</li>
+        <li>Good and Poor Credit - <br>Search Now With No Obligation</li>
+      </ul>
+    </div>
+    <div class="select-form-on-main">
+      <form action="get" id="seleciform">
+        <div class="select-wrapper">
+          <div class="how-mach">
+            <p>How much you want ?</p>
+            <select name="valuelist" form="seleciform">
+              <option value="40">£ 40</option>
+              <option value="70">£ 70</option>
+              <option value="80">£ 80</option>
+              <option value="90">£ 90</option>
+            </select>
+          </div>
+          <div class="how-log">
+            <p>How long you want ?</p>
+            <select name="monthlist" form="seleciform">
+             <option value="3">3 month</option>
+             <option value="4">4 month</option>
+             <option value="5">5 month</option>
+             <option value="6">6 month</option>
+            </select>
+          </div>
+        </div>
+        <button type="button" type="submit">Get A Quote</button>
+      </form>
+    </div>
+  </div>
+  <div class="info-of-content">
+    <div class="header-of-content">
+      <h3>How We Compare</h3>
+      <p>Check out our 5 star loan service!</p>
+    </div>  
+  </div>
+  <div class="row upper-indentation perks">
+    <div class="large-2 columns">
+      <div class="repks-container">
+        <div class="rounded-bg-image">
+          <img src="img/icon.png" alt="We Don't Charge Fees">
+        </div>
+        <p>We Don't Charge Fees</p>
+      </div>
+    </div>
+    <div class="large-2 columns">
+      <div class="repks-container">
+        <div class="rounded-bg-image">
+          <img src="img/bag.png" alt="No Paperwork">
+        </div>
+        <p>No Paperwork</p>
+      </div>
+    </div>
+    <div class="large-2 columns">
+      <div class="repks-container">
+        <div class="rounded-bg-image">
+          <img src="img/exchange.png" alt="Instant Loan Offer">
+        </div>
+        <p>Instant Loan Offer</p>
+      </div>
+    </div>
+    <div class="large-2 columns">
+      <div class="repks-container">
+        <div class="rounded-bg-image">
+          <img src="img/clerc.png" alt="No Obligation">
+        </div>
+        <p>No Obligation</p>
+      </div>
+    </div>
+    <div class="large-2 columns">
+      <div class="repks-container">
+        <div class="rounded-bg-image">
+          <img src="img/hands.png" alt="Online Decision">
+        </div>
+        <p>Online Decision</p>
+      </div>
+    </div>
+  </div>
+  <div class="row upper-indentation borrow-form">
+  <form action="get" id="">
+    <div class="large-7 columns">
+      <div class="process-borrow-form">
+        <div class="how-mach-wrapper">
+          <p class="how-mach-cash">How much cash you want ?</p>
+            <div class="want-ammount">
+              <select name="ammount" id="" form="ammount-form" >
+                <option value="300">£ 300</option>
+                <option value="400">£ 300</option>
+                <option value="500">£ 500</option>
+                <option value="600">£ 600</option>
+              </select>
+            </div>
+          <div class="slider-wrapper">
+            <div class="slider-container">
+              <div class="slider" data-slider data-initial-start="50">
+                <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
+                <span class="slider-fill" data-slider-fill></span>
+              </div>
+              <ul>
+                <li>£100</li>
+                <li>£200</li>
+                <li>£300</li>
+                <li>£400</li>
+                <li>£500</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ammount-details-wrapper">
+            <div class="borrowing-box">
+              <p>Borrowing</p>
+              <span>£</span><input type="number" id="sliderOutput1">
+            </div>
+            <span class="sign multiplication">+</span>
+            <div class="borrowing-box">
+              <p>Interest</p>
+              <p>£<span>24.91</span></p>
+            </div>
+            <span class="sign">=</span>
+            <div class="borrowing-box">
+              <p>Total to repay</p>
+              <p>£<span>197.90</span></p>
+            </div>
+          </div>
+          <button type="submit">Get A Quote</button>
+        </div> 
+      </div>
+    </div>
+    </form>
+    <div class="large-5 columns">
+      <div class="select-borrom-form">
+        <div class="option-wrapper">
+          <div class="icon-option">
+          </div>
+          <ul class="vertical menu" data-accordion-menu>
+            <li>
+              <a href="#">How much can new customers borrow?</a>
+              <ul class="menu vertical nested">
+                <li>Up to £2,000</li>
+               </ul>
+            </li>
+          </ul>
+        </div>  
+        <div class="option-wrapper">
+          <div class="icon-option"></div>
+            <ul class="vertical menu" data-accordion-menu>
+              <li>
+                <a href="#">What is our loan repayment term?</a>
+                <ul class="menu vertical nested">
+                  <li>Up to £2,000</li>
+                 </ul>
+              </li>
+            </ul>
+        </div>
+        <div class="option-wrapper">
+          <div class="icon-option">
+          </div>
+            <ul class="vertical menu" data-accordion-menu>
+              <li>
+                <a href="#">Approx monthly cost of borrowing £100</a>
+                <ul class="menu vertical nested">
+                  <li>Up to £2,000</li>
+                 </ul>
+              </li>
+            </ul>
+        </div>
+        <div class="option-wrapper">
+          <div class="icon-option">
+          </div>
+            <ul class="vertical menu" data-accordion-menu>
+              <li>
+                <a href="#">Number of people offered financial help?</a>
+                <ul class="menu vertical nested">
+                  <li>Up to £2,000</li>
+                 </ul>
+              </li>
+            </ul>
+        </div>
+        <div class="option-wrapper">
+          <div class="icon-option">
+          </div>
+            <ul class="vertical menu" data-accordion-menu>
+              <li>
+                <a href="#">Could I repay in instalments?</a>
+                <ul class="menu vertical nested">
+                  <li>Up to £2,000</li>
+                 </ul>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="info-of-content credit-accepted">
+    <div class="header-of-content">
+      <h3>Same Day Loans</h3>
+      <p>Good and Bad Credit Accepted*</p>
+      <p>Find a No Fee Payday Loan In Minutes - Apply Today!</p>
+    </div>  
+  </div>
+  <div class="row upper-indentation steps">
+    <div class="large-4 columns">
+      <div class="three-steps-container">
+        <img src="img/borrow-list.jpg" alt="Fill out the short cash form">
+        <p>Fill out the short <br> cash form</p>
+      </div>
+    </div>
+    <div class="large-4 columns">
+      <div class="three-steps-container">
+        <img src="img/man.jpg" alt="Receive lender approval and accept terms">
+        <p>Receive lender approval <br>and accept terms</p>
+      </div>
+    </div>
+    <div class="large-4 columns">
+      <div class="three-steps-container">
+        <img src="img/agriment.jpg" alt="Cash deposited into your account by lender">
+        <p>Cash deposited into <br>your account by lender</p>
+      </div>
+    </div>
+  </div>
+  <p class="credit-accepted-botom">You could have cash in your bank in just 10 minutes!*</p>
+  <div class="row upper-indentation lili-decription">
+    <div class="large-12 columns">
+      <p><span>lillyloans</span> started broking loans back in 2005 and have since helped thousands of people, just like you, to find a short term loan solution. Complete the short search form above and our technology will scan the market to find a selection of lenders who can help with your finance needs. Our service is 100% online and loans can be approved instantly. You could have the cash you need in as little as 10 minutes*. We specialise in getting loan enquiries accepted first time and will always offer you the very best rate from our panel of lenders.</p>
+      <p>Our lenders loans have 3 month loan terms although we can arrange loans for up to 6 months if required. Your loan request is used to try to generate an instant, no obligation payday loan offer to match your borrowing needs. If our lenders cannot match your needs exactly your request may be accepted by a lender willing to provide you with an alternative amount. You may also be offered a free credit report which may allow you to assess your financial standing. Full financial terms are clearly displayed with your personalised offer which gives you the opportunity to make an informed decision on the product offered and you are under no obligation to accept any offer that is made.</p>
+    </div>
+  </div>
+  <div class="info-of-content reviews">
+    <div class="header-of-content">
+      <h3>Reviews</h3>
+      <p>Did you know - 97% of our customers would recommend us to a friend!</p>
+    </div>  
+  </div>
+  <div class="row upper-indentation slider-reviews">
+    <div class="large-12 columns">
+      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <ul class="orbit-container">
+          <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span></button>
+          <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span></button>
+          <li class="orbit-slide is-active">
+            <div class="review-container-wrapper">
+              <div class="for-quot">
+                <div class="rouded-quot"></div>
+                <div class="review-container">
+                  <div class="review-text-container">
+                    <div class="review-text">
+                      <p>I applied and had the £350 I needed to repair my car in my bank account within the hour, much faster than I expected!</p>
+                    </div>
+                  </div>
+                  <div class="rewiew-owner-container">
+                   <img src="img/image-owner.png" alt="review">
+                   <div class="line-div"><hr></div>
+                   <div class="owner-name">Joan Doe,Meeting manager</div>
+                  </div>
+                </div>
+            </div>
+            <div class="for-quot">
+                <div class="rouded-quot"></div>
+                <div class="review-container">
+                  <div class="review-text-container">
+                    <div class="review-text">
+                      <p>I was happy that my loan was completed 100% online as I was embarrassed to discuss my credit rating over the phone!</p>
+                    </div>
+                  </div>
+                  <div class="rewiew-owner-container">
+                   <img src="img/image-owner.png" alt="review">
+                   <div class="line-div"><hr></div>
+                   <div class="owner-name">Joan Doe,Meeting manager</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="orbit-slide is-active">
+            <div class="review-container-wrapper">
+              <div class="for-quot">
+                <div class="rouded-quot"></div>
+                <div class="review-container">
+                  <div class="review-text-container">
+                    <div class="review-text">
+                      <p>I applied and had the £350 I needed to repair my car in my bank account within the hour, much faster than I expected!</p>
+                    </div>
+                  </div>
+                  <div class="rewiew-owner-container">
+                   <img src="img/image-owner.png" alt="review">
+                   <div class="line-div"><hr></div>
+                   <div class="owner-name">Joan Doe,Meeting manager</div>
+                  </div>
+                </div>
+            </div>
+            <div class="for-quot">
+                <div class="rouded-quot"></div>
+                <div class="review-container">
+                  <div class="review-text-container">
+                    <div class="review-text">
+                      <p>I was happy that my loan was completed 100% online as I was embarrassed to discuss my credit rating over the phone!</p>
+                    </div>
+                  </div>
+                  <div class="rewiew-owner-container">
+                   <img src="img/image-owner.png" alt="review">
+                   <div class="line-div"><hr></div>
+                   <div class="owner-name">Joan Doe,Meeting manager</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>    
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="info-of-content borrowing-info">
+    <div class="header-of-content">
+      <h3>Responsible Borrowing Information</h3>
+      <p>At LillyLoans, we do our best to ensure responsible borrowing. Please only apply for a loan that you can afford to repayand make sure that you read the terms and conditions of a loan agreement before taking out a loan.</p>
+    </div>  
+  </div>
+  <div class="row upper-indentation max-min-terms">
+    <div class="columns-12 large">
+      <div class="term-container">
+        <h4>Maximum/Minimum Terms Of Repayment And Maximum APR</h4>
+        <p>The loans offered on this website have minimum repayment terms of 90 days (3 months) and maximum repayment terms of 180 days (6 months). Our typical repayment term is 90 days. Lending rates vary from 49.9% to a maximum APR of 1255.66% APR depending on your circumstances.</p>
+      </div>
+      <div class="term-container">
+        <h4>Collections Process</h4>
+        <p>If you're having problems making a payment please contact the lender directly so that they can discuss your payment options. Should the situation remain unresolved the lender may reserve the right to pass your details onto a third party collections agency.</p>
+      </div>
+      <div class="term-container">
+        <h4>Implications of Non-Payment</h4>
+        <p>We always recommend repaying on time. If you are unable to pay on time, each lender has their own policies with regards to fees and interest, and how they collect outstanding debts. Most will contact you by phone or letter in order to rearrange payment. Non-payment may result in charges and/or raised interest. We suggest contacting your lender as soon as you are aware there is a problem, as otherwise, it may be noted on your credit record.</p>
+      </div>
+      <div class="term-container">
+        <h4>Late Payment</h4>
+        <p>If you are unable to make your repayment on time then you should contact your lender immediately. Lenders may charge a late payment fee which could range between £1 - £100. This will vary between lenders. For more information please read the terms and conditions of your loan agreement.</p>
+      </div>
+      <div class="term-container">
+        <h4>Renewal Policy</h4>
+        <p>If you wish to renew your loan, you should contact your lender in advance. Most lenders will charge the same rate of interest and fees for another month on the entire amount owed. In the event of non-payment, a loan renewal/extension could be automatic and further interest and/or charges may be added to your account.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- content end   -->
+  <!-- footer start -->
+  <footer>
+    <div class="callout large secondary">
+      <div class="row">
+        <div class="large-3 large-offset-2 columns">
+          <div class="logo">lillyloans</div>
+          <ul class="menu vertical">
+            <li>Сategories</li>
+            <li><a href="home.html">Homepage</a></li>
+            <li><a href="how-it-works.html" class="active">How It Works</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="apply-now.html">Apply Now</a></li>
+            <li><a href="select-loan.html">Get Loan</a></li>
+          </ul>
+        </div>
+        <div class="large-3 columns right-border">
+          <ul class="menu vertical custom">
+            <li>Customer</li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Complaints Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="large-6 columns">
+          <p>lillyloans.co.uk is a registered Trading Name of EGOUK Ltd which is an Introducer Appointed Representative of Quint Group Limited, and is entered on the Financial Services Register under reference number 733559. Quint Group Limited is authorised and regulated by the Financial Conduct Authority and is entered on the Financial Services Register under reference number: 669450. EGOUK Ltd is registered in England and Wales (Company number 08163467), Registered Office; 40 Lickey Coppice, Cofton Hackett, Birmingham, B45 8PQ. Licenced by the Information Commissioners Office, (registration number Z3533362).</p>
+          <p>lillyloans.co.uk does not make credit decisions, and is not a lender. Lolly matches customer’s loan applications with lenders in our database based on information you provide. Lolly may recieve commissions from the lenders we work with. This website does not directly endorse a particular product or service. Information on our website should be taken as opinion only. Loans for UK based customers only.</p>
+      </div>
+    </div>
+  </div>
+  </footer>
+  <!-- footer end -->
+</div>
+</body>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/vendor/foundation.min.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/app.js"></script>
+</html>
+
+

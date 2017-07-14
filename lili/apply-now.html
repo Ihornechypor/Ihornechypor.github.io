@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="<?= Yii::$app->charset ?>"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="stylesheets/screen.css">
+</head>
+<body>
+<div class="page-wrapper">
+  <!-- Small Navigation -->
+  <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="medium">
+    <a class="logo-small show-for-small-only logo" href="#">lillyloans</a>
+    <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title">Menu</div>
+  </div>
+  
+  <!-- Medium-Up Navigation -->
+  <nav class="top-bar" id="nav-menu">
+  
+    <div class="logo-wrapper hide-for-small-only">
+      <div class="logo">lillyloans</div>
+    </div>
+  
+    <!-- Left Nav Section -->
+    <div class="top-bar-left">
+      <ul class="vertical medium-horizontal menu">
+        <li><a href="home.html">Homepage</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="apply-now.html" class="active">Apply Now</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- content start -->
+   <div class="banner-on-main registration">
+    <div class="main-info">
+      <ul>
+        <li>Payday Loans from £50 to £2,000</li>
+        <li>Simple 3 Month Loan Solutions</li>
+        <li>Good and Poor Credit - <br>Search Now With No Obligation</li>
+      </ul>
+    </div>
+    <div class="select-form-on-main">
+      <form action="get" id="seleciform">
+        <div class="select-wrapper">
+          <div class="how-mach">
+            <p>How much you want ?</p>
+            <select name="valuelist" form="seleciform">
+              <option value="40">£ 40</option>
+              <option value="70" selected>£ 50</option>
+              <option value="80">£ 80</option>
+              <option value="90">£ 90</option>
+            </select>
+          </div>
+          <div class="how-log">
+            <p>How long you want ?</p>
+            <select name="monthlist" form="seleciform">
+             <option value="3">3 month</option>
+             <option value="4">4 month</option>
+             <option value="5">5 month</option>
+             <option value="6">6 month</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" >Get A Quote</button>
+      </form>
+    </div>
+  </div>
+  <div class="row upper-indentation registration-text">
+    <div class="large-12 columns">
+      <h2>We have up to 20 lenders who could offer you a loan - paid online today!*<h2>
+    </div>
+    <div class="large-12 columns">
+      <p>Complete Our 1-Minute Secured Verification Form</p>
+    </div>
+  </div> 
+  <form action="post" id="registration-form" class="form-for-registration">
+  <div class="row upper-indention">
+    <div class="large-6 columns">
+        <label for="loanAmount">LOAN AMOUNT (£) *</label>
+        <select name="loanAmount" id="loanAmount" form="registration-form" class="custom-position">
+          <option value="0"  selected disabled>Choose Amount</option>
+          <option value="50">50</option>
+          <option value="80">80</option>
+          <option value="400">400</option>
+        </select>
+        <label for="loan-term">LOAN TERM *</label>
+        <select name="loan-term" id="loan-term" form="registration-form" class="custom-position-loan">
+          <option value="0" selected disabled>Choose purpose</option>
+          <option value="3">3 months</option>
+          <option value="4">4 months</option>
+          <option value="5">5 months</option>
+        </select>
+        <label for="purpose-loan">PURPOSE OF LOAN *</label>
+        <select name="purpose-loan" id="purpose-loan" form="registration-form">
+          <option value="0" selected disabled>Choose purpose</option>
+          <option value="1">1</option>
+          <option value="2">1</option>
+          <option value="3">1</option>
+        </select>
+        <div class="gender-container">
+          <p>GENDER*</p>
+          <input type="radio" name="gender" value="male" id="male"><label for="male">male</label><br>
+          <input type="radio" name="gender" value="female" id="female"><label for="female">female</label>
+        </div>
+        <div class="personal-details-container">
+          <div class="registration-type-wrapper">
+            <div class="registration-icon"></div>
+            <div class="details">Your personal detalis</div>
+          </div>
+          <label for="title">TITLE *</label>
+          <select name="title" id="title" form="registration-form">
+            <option value="0" selected disabled>Please select</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label for="first-name">FIRST NAME *</label>
+          <input type="text" id="first-name" placeholder="Enter Your First Name">
+          <label for="last-name">LAST NAME *</label>
+          <input type="text" id="last-name" placeholder="Enter Your Last Name">
+          <label for="birth">YEAR OF BIRTH *</label>
+          <select name="birth" id="birth" form="registration-form">
+            <option value="0" selected disabled>Please select</option>
+            <option value="2001">2001</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+          </select>
+          <label for="mail">EMAIL *</label>
+          <input type="email" id="mail" placeholder="Enter Your Email">
+          <label for="phone">MOBILE PHONE *</label>
+          <input type="number" id="phone" placeholder="Enter Your Phone">
+          <label for="material-status">MARITAL STATUS *</label>
+          <select name="material-status" id="material-status" form="registration-form">
+            <option value="0" selected disabled>Choose here</option>
+            <option value="Meried">Meried</option>
+            <option value="Single">Single</option>
+          </select>
+          <label for="dependants">NUMBER OF DEPENDANTS *</label>
+          <select name="dependants" id="dependants" form="registration-form">
+            <option value="0" selected disabled>Choose here</option>
+            <option value="Meried">Meried</option>
+            <option value="Single">Single</option>
+          </select>
+        </div>
+        <div class="residence-container">
+          <div class="registration-type-wrapper">
+            <div class="registration-icon"></div>
+            <div class="details">Your residence detalis</div>
+          </div>
+          <label for="house-number">HOUSE NAME/NUMBER *</label>
+          <input type="text" id="house-number" placeholder="Enter Your House Name">
+          <label for="street">STREET *</label>
+          <input type="text" id="street" placeholder="Enter Your Street">
+          <label for="text">TOWN/CITY *</label>
+          <input type="text" id="town" placeholder="Enter Your Town/City">
+          <label for="country">COUNTRY *</label>
+          <input type="text" id="country" placeholder="Enter Your Country">
+          <label for="post-code">POST CODE *</label>
+          <input type="number" id="post-code" placeholder="Enter Your Post Code">
+        </div>
+        <div class="employment-container">
+          <div class="registration-type-wrapper">
+            <div class="registration-icon"></div>
+            <div class="details">Employment detalis</div>
+          </div>
+          <label for="employment-status">EMPLOYMENT STATUS *</label>
+          <select name="employment-status" id="employment-status" form="registration-form">
+            <option value="0" selected disabled>Choose here</option>
+            <option value="Work">Work</option>
+            <option value="Don't work">Don't work</option>
+          </select>
+          <label for="addintional-income">ADDITIONAL INCOME *</label>
+          <select name="addintional-income" id="addintional-income" form="registration-form">
+            <option value="0" selected disabled>Choose here</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="financial-detalis-container">
+          <div class="registration-type-wrapper">
+            <div class="registration-icon"></div>
+            <div class="details">Your financial detalis</div>
+          </div>
+          <label for="debit-card">DEBIT CARD *</label>
+          <select name="debit-card" id="debit-card" form="registration-form">
+            <option value="0" selected disabled>Choose here</option>
+            <option value="Viza">Viza</option>
+            <option value="MasterCard">MasterCard</option>
+          </select>
+          <label for="direct-debit">PAID AS DIRECT DEBIT *</label>
+          <select name="direct-debit" id="direct-debit" form="registration-form">
+            <option value="0" selected disabled>Choose here</option>
+            <option value="Yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <label for="account-number">ACCOUNT NUMBER *</label>
+          <input type="number" id="account-number" placeholder="12345678">
+          <label for="sort-code">SORT CODE *</label>
+          <input type="number" id="sort-code" placeholder="123456">
+          <label for="bank-name">BANK NAME *</label>
+          <select name="bank-name" id="bank-name" form="registration-form">
+            <option value="0" selected disabled>Choose here</option>
+            <option value="Bank1">Bank1</option>
+            <option value="Bank2">Bank2</option>
+          </select>
+          <label for="how-paid">HOW ARE YOU PAID? *</label>
+          <select name="how-paid" id="how-paid" form="registration-form">
+            <option value="0" selected disabled>Choose here</option>
+            <option value="cash">cash</option>
+            <option value="transfer">transfer</option>
+          </select>
+        </div>
+        <div class="expenditure-container">
+          <div class="registration-type-wrapper">
+            <div class="registration-icon"></div>
+            <div class="details">Monthly Expenditure Information</div>
+          </div>
+          <label for="house-exp">HOUSING EXPENDITURE *</label>
+          <input type="number" id="house-exp" placeholder="0">
+          <label for="Utility-out">UTILITY OUTGOINGS *</label>
+          <input type="number" id="Utility-out" placeholder="0">
+          <label for="food-exp">FOOD EXPENDITURE *</label>
+          <input type="number" id="food-exp" placeholder="0">
+          <label for="transport-exp">TRANSPORT EXPENDITURE *</label>
+          <input type="number" id="transport-exp" placeholder="0">
+          <label for="credit-exp">CREDIT EXPENDITURE *</label>
+          <input type="number" id="credit-exp" placeholder="0">
+        </div>
+        <div class="password-container">
+           <div class="registration-type-wrapper">
+             <div class="registration-icon"></div>
+             <div class="details">Create a Password</div>
+           </div>
+           <label for="password">PASSWORD *</label>
+           <input type="password" id=""password" placeholder="Choose password">
+           <label for="password-confirmp">CONFIRM PASSWORD *</label>
+           <input type="password" id="password-confirmp" placeholder="Choose password">
+        </div>
+           <div class="check-box-container">
+             <input type="checkbox" id="confirm-right-data" checked><label for="confirm-right-data">You confirm that your income and expenditure information is correct and you have also considered potential future income and outgoings in determining your ability to repay your loan</label>
+           </div>
+           <div class="check-box-container">
+             <input type="checkbox" id="read-and-assept"><label for="read-and-assept">I have read and accept the terms and conditions of verymerryloans.com</label>
+           </div>
+           <div class="check-box-container">
+             <input type="checkbox" id="allow-messages"><label for="allow-messages">You indicate your consent to receiving email and sms marketing messages from us and our trusted partners unless you have indicated an objection to receiving such messages by ticking the box</label>
+           </div>
+        <button type="submit"><span>Submit</span></button>
+      <p class="representative-ex">Representative Example: Representative 305.9% APR. Representative example: £400 borrowed for 90 days. Total amount repayable is £561.92. Interest charged is £161.92, interest rate 161.9% (APR variable).</p>
+    </div>
+    <div class="large-6 columns">
+      <div class="apply-slider">
+        <div class="process-borrow-form">
+          <div class="how-mach-wrapper">
+            <p class="how-mach-cash">How much cash you want ?</p>
+              <div class="want-ammount">
+                <select name="ammount" id="">
+                  <option value="300">£ 300</option>
+                  <option value="400">£ 300</option>
+                  <option value="500">£ 500</option>
+                  <option value="600">£ 600</option>
+                </select>
+              </div>
+            <div class="slider-wrapper">
+              <div class="slider-container">
+                <div class="slider" data-slider data-start="100" data-initial-start="300" data-step="50" data-end="500">
+                  <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
+                  <span class="slider-fill" data-slider-fill></span>
+                </div>
+                <ul>
+                  <li>£100</li>
+                  <li>£200</li>
+                  <li>£300</li>
+                  <li>£400</li>
+                  <li>£500</li>
+                </ul>
+              </div>
+            </div>
+            <div class="ammount-details-wrapper">
+              <div class="borrowing-box">
+                <p>Borrowing</p>
+                <span>£</span><input type="number" id="sliderOutput1">
+              </div>
+              <span class="sign multiplication">+</span>
+              <div class="borrowing-box">
+                <p>Interest</p>
+                <p>£<span>24.91</span></p>
+              </div>
+              <span class="sign">=</span>
+              <div class="borrowing-box">
+                <p>Total to repay</p>
+                <p>£<span>197.90</span></p>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <p class="representative-ex">
+          Representativ 728,9% APR. Reprasentativ example: £400 barrowed for 30 days. Total amount repayable is £459,36. Interest charged is £59.36, Interest rate 180.5%(variable)
+        </p>
+        <div class="advantages">
+          <ul>
+            <li>Decisions in minutes</li>
+            <li>Repay within 30 days</li>
+            <li>Bad credit accepted</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
+  <!-- content end   -->
+  <!-- footer start -->
+  <footer>
+    <div class="callout large secondary">
+      <div class="row">
+        <div class="large-3 large-offset-2 columns">
+          <div class="logo">lillyloans</div>
+          <ul class="menu vertical">
+            <li>Сategories</li>
+            <li><a href="home.html">Homepage</a></li>
+            <li><a href="how-it-works.html" class="active">How It Works</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="apply-now.html">Apply Now</a></li>
+            <li><a href="select-loan.html">Get Loan</a></li>
+          </ul>
+        </div>
+        <div class="large-3 columns right-border">
+          <ul class="menu vertical custom">
+            <li>Customer</li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Complaints Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="large-6 columns">
+          <p>lillyloans.co.uk is a registered Trading Name of EGOUK Ltd which is an Introducer Appointed Representative of Quint Group Limited, and is entered on the Financial Services Register under reference number 733559. Quint Group Limited is authorised and regulated by the Financial Conduct Authority and is entered on the Financial Services Register under reference number: 669450. EGOUK Ltd is registered in England and Wales (Company number 08163467), Registered Office; 40 Lickey Coppice, Cofton Hackett, Birmingham, B45 8PQ. Licenced by the Information Commissioners Office, (registration number Z3533362).</p>
+          <p>lillyloans.co.uk does not make credit decisions, and is not a lender. Lolly matches customer’s loan applications with lenders in our database based on information you provide. Lolly may recieve commissions from the lenders we work with. This website does not directly endorse a particular product or service. Information on our website should be taken as opinion only. Loans for UK based customers only.</p>
+      </div>
+    </div>
+  </div>
+  </footer>
+  <!-- footer end -->
+</div>
+</body>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/vendor/foundation.min.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/app.js"></script>
+</html>
+
