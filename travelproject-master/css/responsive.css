@@ -1,0 +1,49 @@
+.hidden-gal {
+	display: none;
+}
+@media (max-width: 1990px) {
+	.img-container img{
+		width: 70%;
+		height: 70%;  
+	}
+	.bigimages img{
+		width: 51%;
+		height: 50%;  
+
+	}
+	.bigimages img:last-child, .bigimages img:nth-child(4) {
+		display: none;
+	}
+	/*.hidden-gal {
+		display: inline-block;
+	}*/
+		
+	
+}
+
+@media (max-width: 1100px) {
+	.submit-button{
+		width: 100%; 
+	}
+	
+
+
+
+
+}
+
+@media (max-width: 1200px) {
+	a.read-more {
+		width: 100%; 
+		
+	}
+	.about-section .about-info .ab-text p  {
+		margin: 10px 0;
+	}
+	.header-container h1 {
+		font-size: 100px;
+	}
+
+
+
+}

@@ -1,0 +1,165 @@
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+body { min-width: 280px; }
+
+* { box-sizing: border-box; }
+
+.clear-fix::after, .clear-fix::before { content: ""; display: table; }
+
+.clear-fix { clear: both; }
+
+a:hover { text-decoration: none; }
+
+@font-face { font-family: Ubuntu-Bold; src: url(../fonts/Ubuntu-Bold.ttf); }
+@font-face { font-family: Ubuntu-regular; src: url(../fonts/Ubuntu-Regular.ttf); }
+@font-face { font-family: PT_Sans; src: url(../fonts/PT_Sans-Web-Regular.ttf); }
+@font-face { font-family: PT_Sans-Web-Bold; src: url(../fonts/PT_Sans-Web-Bold.ttf); }
+@font-face { font-family: GothamProBold; src: url(../fonts/GothamProBold.ttf); }
+.container h2 { font-family: Ubuntu-Bold; color: #3a3a3a; font-size: 36px; text-transform: uppercase; letter-spacing: 3px; margin-left: 19%; }
+
+/* nav  */
+.container.header .left-nav { background: url(../img/rope.png) 1px 196px no-repeat, url(../img/bg-header.png) 0 0 no-repeat; color: #ffffff; padding-bottom: 750px; }
+
+.navbar-brand { font-family: Ubuntu-Bold; font-size: 21px; line-height: 20px; font-weight: 700; width: 84px; margin-top: 17px; }
+.navbar-brand:hover { color: #999999; }
+
+.nav.navbar-nav { font-family: Ubuntu-regular; font-size: 13px; margin-left: 8.638360176%; margin-top: 29px; }
+.nav.navbar-nav li:first-child { margin-left: 3px; }
+.nav.navbar-nav li:first-child, .nav.navbar-nav li:nth-child(4) { margin-right: 14px; }
+.nav.navbar-nav li:nth-child(2), .nav.navbar-nav li:nth-child(3) { margin-right: 12px; }
+
+.presentation { font-family: GothamProBold; font-weight: 700; }
+.presentation .tel-box { font-size: 15px; color: #ec453a; text-align: right; margin-top: 42px; margin-right: 11.07379209%; }
+.presentation .tel-box a { color: #ec453a; }
+.presentation .tel-box a:hover { color: #81140c; }
+.presentation .tel-box i { margin-right: 8px; }
+.presentation .main-info { font-family: Ubuntu-Bold; margin-top: 150px; margin-left: 17.13367496%; }
+.presentation .main-info p:first-child, .presentation .main-info .request a { text-transform: uppercase; font-size: 12px; color: #eb443a; letter-spacing: 2.4px; }
+.presentation .main-info h1 { margin-top: 40px; font-size: 90px; line-height: 0.889; margin-left: -5px; }
+.presentation .main-info h1 span:first-child { color: #e9433b; }
+.presentation .main-info h1 span:last-child { color: #ce2f3e; }
+.presentation .main-info .about { font-family: PT_Sans; font-weight: 400; line-height: 1.286; color: #757575; margin-top: 31px; font-size: 14px; }
+.presentation .main-info .request { margin-top: 26px; margin-left: -7px; }
+.presentation .main-info .request img { float: left; margin-right: 19px; }
+.presentation .main-info .request p { padding-top: 22px; }
+.presentation .main-info .social { margin-top: 161px; margin-right: 14.3%; font-size: 20px; color: #d3333d; }
+.presentation .main-info .social ul { text-align: right; }
+.presentation .main-info .social ul li:last-child { margin-top: 10px; }
+.presentation .main-info .social a { color: #d3333d; }
+.presentation .main-info .social a:hover { color: #ae252e; }
+
+.container.short-resume h2 { margin-top: 110px; }
+.container.short-resume .margin-row { margin-top: 76px; }
+.container.short-resume .row.first .col-sm-3.col-md-3.col-lg-3, .container.short-resume .row.first .col-sm-4.col-md-4.col-lg-4, .container.short-resume .row.first .col-sm-5.col-md-5.col-lg-5, .container.short-resume .row .col-sm-3.col-md-3.col-lg-3, .container.short-resume .row .col-sm-4.col-md-4.col-lg-4, .container.short-resume .row .col-sm-5.col-md-5.col-lg-5 { padding-left: 0px; padding-right: 0px; border: 1px solid #eaeaea; }
+.container.short-resume .row.first .col-sm-5.col-md-5.col-lg-5 { border: none; background: url(../img/quot.png) 30px 10px no-repeat; }
+.container.short-resume .row.first .col-sm-4.col-md-4.col-lg-4 { border-left: none; border-bottom: none; }
+.container.short-resume .row { margin-right: auto; margin-left: auto; }
+.container.short-resume .row .col-sm-3.col-md-3.col-lg-3 { border-top: none; border-right: none; }
+.container.short-resume .row .col-sm-4.col-md-4.col-lg-4 { border-right: none; }
+.container.short-resume .cont { font-family: PT_Sans; height: 243px; padding-top: 62px; padding-left: 70px; padding-right: 10px; }
+.container.short-resume .cont .years { font-family: Ubuntu-Bold; color: #3a3a3a; font-size: 18px; }
+.container.short-resume .cont .years span { font-size: 48px; }
+.container.short-resume .cont p:last-child { font-family: PT_Sans; font-size: 14px; color: #757575; }
+.container.short-resume .cont.third p { font-family: PT_Sans-Web-Bold; font-size: 20px; font-weight: 700; }
+.container.short-resume .cont.third p span { color: #df3b3c; }
+.container.short-resume .row.third { margin-top: 57px; }
+.container.short-resume .row.third .col-sm-7.col-md-7.col-lg-7 { background: url(../img/quot.png) 256px 0 no-repeat; }
+.container.short-resume .row.third .words-of-coach { margin-left: 140px; }
+.container.short-resume .row.third .words-of-coach img { float: left; margin-right: 40px; }
+.container.short-resume .row.third .words-of-coach .words { font-family: PT_Sans-Web-Bold; font-size: 20px; font-weight: 700; padding-top: 10px; }
+.container.short-resume .row.third .words-of-coach .words p { line-height: 1.35; }
+.container.short-resume .row.third .words-of-coach .words span { color: #df3b3c; }
+.container.short-resume .row.third .col-sm-5.col-md-5.col-lg-5 { border: none; }
+.container.short-resume .row.third .contact-me { margin-top: 20px; margin-left: 78px; }
+
+.container.mywork { margin-top: 250px; }
+.container.mywork .my-work-margin { margin-top: 82px; margin-left: 100px; }
+.container.mywork h3 { font-family: Ubuntu-Bold; font-size: 36px; color: #ffffff; font-weight: 700; text-transform: uppercase; line-height: 1.667; letter-spacing: 7px; }
+.container.mywork ul { font-family: PTSans; color: #fff2d4; font-weight: 400; font-size: 14px; line-height: 2.6; letter-spacing: 0.33px; }
+.container.mywork .row.create { height: 720px; background: url(../img/my-work.png) 0 0 no-repeat; }
+.container.mywork .row.create h3 { margin-top: 280px; margin-left: 155px; }
+.container.mywork .row.create .list { margin-top: 216px; margin-left: -40px; }
+.container.mywork .row.create .list li { background: url(../img/checked1.png) 0 12px no-repeat; padding-left: 38px; }
+.container.mywork .row.grows { height: 720px; background: url(../img/my-work2.png) 0 0 no-repeat; }
+.container.mywork .row.grows h3 { margin-top: 205px; }
+.container.mywork .row.grows .list { margin-top: 150px; margin-left: 85px; }
+.container.mywork .row.grows .list li { background: url(../img/checked2.png) 0 12px no-repeat; padding-left: 38px; }
+
+.container.coachses .write-on-consultation { border: 11px solid #ee463a; width: 82.3%; margin-top: 127px; margin-left: 156px; padding-bottom: 106px; padding-left: 6.7%; }
+.container.coachses h2 { letter-spacing: 3.2px; line-height: 1.667; margin-top: 101px; margin-left: 0px; }
+.container.coachses h2 span { color: #ec453a; }
+.container.coachses .text-block { font-family: PT_Sans; font-size: 14px; width: 49.45544%; color: #757575; line-height: 21px; margin-top: 41px; }
+.container.coachses .text-block, .container.coachses img { display: inline-block; }
+.container.coachses img { margin-left: 11.2%; }
+
+.container.rewiew, .container.rewiew img, .rew-cont, .col-sm-6.col-md-6.col-lg-6, .foto-block { position: relative; }
+
+.container.rewiew { margin-top: 181px; }
+.container.rewiew .rew-cont { border: 1px solid #eaeaea; width: 76.56967841%; padding: 60px 0 90px 84px; font-family: PT_Sans; font-size: 14px; }
+.container.rewiew .rew-cont.first { margin-left: 85px; margin-top: 91px; }
+.container.rewiew .rew-cont.second { margin-top: -30px; margin-left: 37px; }
+.container.rewiew .foto-block .name-date { position: relative; background: #ee463a; font-family: Ubuntu; font-size: 21px; color: #ffffff; width: 108.912711%; height: 160px; line-height: 21px; padding-top: 82px; padding-left: 85px; }
+.container.rewiew .foto-block .name-date p:last-child { font-size: 14px; color: #b31e14; }
+.container.rewiew .foto-block img { float: left; z-index: 2; left: -46px; top: 41px; }
+.container.rewiew .words-of-rew { color: #757575; padding-top: 22px; padding-left: 85px; line-height: 1.5; }
+.container.rewiew .words-of-rew p { margin-bottom: 49px; }
+.container.rewiew a { font-family: Ubuntu-Bold; font-size: 12px; color: #ee463a; text-transform: uppercase; text-decoration: underline; letter-spacing: 3px; margin-bottom: 300px; }
+.container.rewiew a:hover { color: #b31a0f; }
+.container.rewiew .book-rewievs { text-align: right; margin-right: 296px; margin-top: -42px; }
+
+.container.stories { margin-top: 210px; }
+.container.stories .story-cont { width: 87.084827%; border: 1px solid #eaeaea; padding: 61px 32px 70px 35px; }
+.container.stories .story-cont h3 { font-family: Ubuntu-Bold; font-size: 20px; line-height: 27px; letter-spacing: 0.6px; }
+.container.stories .story-cont p { font-family: PT_Sans; color: #757575; font-size: 14px; }
+.container.stories .story-cont .date { color: #c5c5c5; margin-top: 14px; }
+.container.stories .story-cont .story { margin-top: 30px; margin-bottom: 33px; line-height: 21px; }
+.container.stories .story-cont a { font-family: Ubuntu-Bold; font-size: 12px; color: #ee463a; text-transform: uppercase; text-decoration: underline; letter-spacing: 2.4px; }
+.container.stories .story-cont a img { margin-left: 24px; margin-top: 0px; }
+.container.stories .story-cont a:hover { color: #b31a0f; }
+.container.stories .story-cont span { font-family: PT_Sans; margin-left: 6px; text-decoration: none; color: #757575; }
+.container.stories .story-cont.first { margin-top: 80px; margin-left: 85px; }
+.container.stories .story-cont.second { margin-top: 153px; margin-left: 30px; }
+.container.stories .story-cont.third { margin-top: -31px; margin-left: -25px; }
+.container.stories img { margin-top: 10px; margin-left: 70%; }
+
+footer { width: 100%; margin: 0 auto; max-width: 1366px; }
+
+.container.contact-me { background: url(../img/footer-bg.png) 0 0 no-repeat; background-size: cover; padding-bottom: 117px; }
+.container.contact-me .for-bg { background: #333333; }
+.container.contact-me h2 { margin-top: 314px; color: #ffffff; }
+.container.contact-me ul { font-family: Ubuntu-regular; margin-left: 40.8%; margin-top: 157px; line-height: 1.5; font-size: 14px; color: #ffffff; }
+.container.contact-me ul li { margin-bottom: 22px; }
+.container.contact-me ul li a { color: #ffffff; }
+.container.contact-me ul li a:hover { color: #e7413b; }
+.container.contact-me ul li i { margin-right: 13px; color: #e7413b; font-size: 20px; }
+.container.contact-me form { margin-top: 58px; margin-left: 50px; width: 58.8%; }
+.container.contact-me .form-group { font-family: Ubuntu-regular; color: #ffffff; font-size: 14px; margin-bottom: 10px; }
+.container.contact-me .form-group input { background: #333333; border: none; border-bottom: 1px solid; }
+.container.contact-me .form-group label { margin-top: 11px; }
+
+/*  reset Bootsrap   */
+.navbar-inverse { background: none; border: none; }
+
+.navbar-inverse .navbar-nav > li > a { color: #ffffff; }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover { background: none; }
+
+.container.header .col-sm-6.col-md-6.col-lg-6 { padding-left: 0px; padding-right: 0px; }
+
+.navbar-collapse { border-top: none; -webkit-box-shadow: none; box-shadow: none; }

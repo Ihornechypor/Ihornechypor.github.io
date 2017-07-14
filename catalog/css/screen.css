@@ -1,0 +1,138 @@
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+* { box-sizing: border-box; }
+
+/*  typografi start */
+@font-face { font-family: LatoBold; src: url(../fonts/Lato-Bold.ttf); }
+@font-face { font-family: ElsieRegular; src: url(../fonts/Elsie-Regular.ttf); }
+@font-face { font-family: PlayfairDisplay-Regular; src: url(../fonts/PlayfairDisplay-Regular.ttf); }
+@font-face { font-family: Lato-Regular; src: url(../fonts/Lato-Regular.ttf); }
+h1 { font-family: PlayfairDisplay-Regular; text-align: center; font-size: 58px; line-height: 32px; }
+
+.navbar-default a, .nav-pannel a, .catalog-menu { font-family: LatoBold; }
+
+/* typografi end */
+/* general styles start */
+body { min-width: 320px; }
+
+.container { max-width: 2464px; }
+
+@media (min-width: 1200px) { .container { width: 2464px; width: 100%; } }
+.row { padding: 0 150px; }
+
+a:hover { text-decoration: none; }
+
+@media (max-width: 992px) { .show-mob { display: block; }
+  .hide-mob { display: none; } }
+@media (min-width: 992px) { .show-mob { display: none; }
+  .hide-mob { display: block; } }
+/* general styles end */
+/*  header start */
+.navbar-default { margin-bottom: 0px; padding: 0 104px; background-color: #ffffff; border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.07); border-radius: 0px; }
+.navbar-default .navbar { border: none; }
+.navbar-default .navbar-right .dropdown { position: relative; }
+.navbar-default .navbar-right .dropdown:after { position: absolute; right: 0; top: 44%; content: "\e114"; font-family: 'Glyphicons Halflings'; font-size: 7px; color: #333333; }
+.navbar-default .navbar-right .dropdown:first-child { margin-right: 20px; }
+.navbar-default .navbar-right .dropdown:last-child { margin-left: 20px; border-left: 1px solid rgba(0, 0, 0, 0.07); }
+.navbar-default a { font-size: 11px; color: #333333; }
+
+/* header end */
+/* after top-nav start */
+.nav-pannel { border-bottom: 1px solid rgba(0, 0, 0, 0.07); padding-top: 29px; padding-bottom: 29px; }
+.nav-pannel .logo { font-family: ElsieRegular; font-size: 52px; }
+.nav-pannel .logo span { font-size: 32px; }
+.nav-pannel .logo a { color: #333333; }
+
+.catalog-menu { margin-top: 17px; text-align: center; }
+.catalog-menu ul { display: table; width: 100%; }
+.catalog-menu ul li { display: table-cell; vertical-align: middle; }
+.catalog-menu a { color: #333333; font-size: 12px; position: relative; }
+.catalog-menu a:hover { color: #999999; }
+.catalog-menu .active { color: black; }
+.catalog-menu .active:after { content: ""; position: absolute; bottom: -4px; left: 0; height: 2px; width: 100%; background-color: #1274d3; }
+.catalog-menu .hight-lighed { color: #fc411d; }
+.catalog-menu .hight-lighed.active:after { background-color: #fc411d; }
+
+.chart ul { text-align: right; }
+.chart ul li { display: inline-block; text-transform: uppercase; font-size: 12px; vertical-align: middle; }
+.chart ul li:nth-child(2) { margin: 0 6px; padding: 19px 21px; border-radius: 50% 50%; border: 2px solid #1f86da; }
+.chart ul a { color: #333333; }
+.chart ul a:hover { color: #999999; }
+.chart .glyphicon { color: rgba(0, 0, 0, 0.5); font-size: 14px; }
+
+@media (max-width: 1360px) { .chart ul { text-align: left; margin-top: 14px; }
+  .chart ul li:nth-child(2) { margin: 0; padding: 5px 6px; } }
+@media (max-width: 992px) { .navbar-default, .row { padding: 0px; }
+  .nav-pannel .col-md-2 { text-align: center; }
+  .nav-pannel .col-md-2 .logo { display: inline-block; font-size: 70px; }
+  .catalog-menu { text-align: center; }
+  .catalog-menu a { font-size: 18px; } }
+@media (max-width: 768px) { .container { width: initial; }
+  .navbar-default .navbar-collapse { text-align: right; }
+  .navbar-default .navbar-collapse a { font-size: 15px; }
+  .navbar-default .navbar-right .dropdown:first-child { margin-right: 0px; }
+  .navbar-default .navbar-right .dropdown:last-child { margin-left: 0px; border: none; }
+  .navbar-default .navbar-right .dropdown:after { text-align: left; left: 0; } }
+@media (min-width: 768px) { .container { width: initial; } }
+/* responsive for header end */
+/* catalog start */
+.catalog h1 { margin-top: 100px; margin-bottom: 59px; }
+.catalog .catalog-menu { margin-bottom: 45px; }
+.catalog .catalog-menu a { text-transform: uppercase; }
+.catalog .col-md-3.col-lg-3 { text-align: center; }
+.catalog .product-container { display: inline-block; margin-bottom: 36px; position: relative; }
+.catalog .product-container img { margin-bottom: 27px; }
+.catalog .product-container p { margin-bottom: 9px; font-family: PlayfairDisplay-Regular; color: #333333; font-size: 16px; }
+.catalog .product-container span { font-family: Lato-Regular; color: #333333; }
+.catalog .product-container .second-price { display: none; }
+.catalog .new-collection:after { content: 'New'; width: 48px; height: 25px; position: absolute; padding-top: 7px; top: 5%; left: 10%; font-family: LatoBold; font-size: 11px; text-transform: uppercase; color: #ffffff; border-radius: 50px 50px; background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.495) 99%, rgba(255, 255, 255, 0.5) 100%); background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.495) 99%, rgba(255, 255, 255, 0.5) 100%); background: -o-linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.495) 99%, rgba(255, 255, 255, 0.5) 100%); background: -ms-linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.495) 99%, rgba(255, 255, 255, 0.5) 100%); background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.495) 99%, rgba(255, 255, 255, 0.5) 100%); background-color: #1274d3; }
+.catalog .has-discount .first-price { text-decoration: line-through; }
+.catalog .has-discount .second-price { display: inline; color: #fc411d; }
+.catalog .has-discount .second-price > span { color: #fc411d; }
+.catalog .load-button {text-transform: uppercase; font-family: LatoBold; color: #333333;}
+/* catalog end */
+/* responsive catalog start */
+@media (max-width: 600px) { .catalog-menu ul { display: block; }
+  .catalog-menu ul li { display: inline-block; width: 100%; margin-top: 5px; margin-bottom: 5px; } }
+/* responsive catalog end */
+/* subscribe block start */
+.subscribe { margin: 0px; padding: 70px 0; width: 100%; background: url(../img/subscribe-bg.png) center center no-repeat; background-size: cover; }
+.subscribe .col-lg-12:first-child p { font-family: LatoBold; font-size: 12px; color: #333333; text-transform: uppercase; }
+.subscribe .col-lg-12:nth-child(2) p { margin-top: 25px; margin-bottom: 25px; font-family: PlayfairDisplay-Regular; font-size: 38px; color: #ffffff; }
+.subscribe .col-lg-12 form { position: relative; }
+.subscribe .col-lg-12 form input { width: 302px; border-radius: 25px 25px; background: none; padding: 20px 26px; border: 2px solid #9dcff0; text-transform: uppercase; }
+.subscribe .col-lg-12 form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */ font-family: LatoBold; color: #ffffff; }
+.subscribe .col-lg-12 form input::-moz-placeholder { /* Firefox 19+ */ font-family: LatoBold; color: #ffffff; }
+.subscribe .col-lg-12 form input:-ms-input-placeholder { /* IE 10+ */ font-family: LatoBold; color: #ffffff; }
+.subscribe .col-lg-12 form input:-moz-placeholder { /* Firefox 18- */ font-family: LatoBold; color: #ffffff; }
+.subscribe .col-lg-12 form button { background: none; border: none; color: #ffffff; margin-left: -53px; }
+
+/* subscribe block end */
+/* subscribe responsive start */
+@media (max-width: 500px) { .subscribe .col-lg-12 form input { width: 250px; } }
+/* subscribe responsive end */
+/* footer start */
+footer .nav-pannel { text-transform: uppercase; }
+footer .rights { margin-top: 21px; color: #333333; font-family: LatoBold; font-size: 12px; }
+
+/* footer end */
+/* footer responsive start */
+@media (max-width: 992px) { footer { text-align: center; }
+  footer .nav-pannel .logo { display: inline-block; } }
+/* footer responsive end */

@@ -1,0 +1,223 @@
+@media (min-width: 1200px){
+.container {
+    width: 1366px;
+}
+
+
+}
+@media (min-width: 768px) {
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+     margin-left: 68px; 
+}
+
+}
+@media(max-width: 1200px){
+	.container.mywork .row.create h3{
+		margin-left: 10px;
+		margin-top: 40px;
+	}
+	.container.rewiew .rew-cont.second,
+	.container.rewiew .rew-cont.first
+	 {
+    margin-top: 10px;
+    margin-left: 0px;
+    }
+    .container.rewiew .words-of-rew {
+    	padding-left: 0px; 
+
+    }
+    .container.rewiew .wore-rewiews {
+    margin-right: 0px;
+    margin-top: 20px;
+
+    }
+    .container.rewiew .book-rewievs{
+    	margin-top: 30px;
+    	margin-right: 30px;
+    }
+    .container.stories .story-cont.third {
+    	margin-top: 10px;
+    }
+}
+
+
+
+
+@media(max-width: 1132px){
+	.container.short-resume .cont {
+		padding-top: 20px;
+		padding-left: 20px;
+
+	}
+
+
+
+}
+@media(max-width: 1000px){
+	
+	.container.mywork .row.create .list li,
+	.container.mywork .row.grows .list li{
+		background: none;
+		list-style: disc;
+		padding-left: 10px;
+	}
+	.container.mywork .row.create .list,
+	.container.mywork .row.grows .list {
+		margin-top: 100px;
+		margin-left: 10px;
+	} 
+	.container.coachses .write-on-consultation {
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+
+	}
+	.container.coachses .text-block {
+		width: auto;
+	}
+	.container.coachses img {
+		margin-top: 20px;
+		margin-left: 0;
+
+	}
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+	.container.header .left-nav {
+		padding-bottom: 775px;
+
+}	
+	.presentation .tel-box,
+	.presentation .main-info,
+	.social,
+	.container.short-resume h2 {
+		margin-top: 10px !important;
+
+	}
+	.nav.navbar-nav li {
+		text-align: right;
+		margin-right: 80px !important;
+
+	}
+	.nav.navbar-nav li a {
+		line-height: 10px;
+	}
+	.navbar-toggle {
+		right: 15%;
+
+	}
+
+	.container.short-resume .row.first .col-sm-4.col-md-4.col-lg-4 {
+			border-left: 1px solid #eaeaea;
+			border-bottom:  1px solid #eaeaea;
+		}
+	.container.short-resume .row .col-sm-3.col-md-3.col-lg-3{
+			border-top:  1px solid #eaeaea;
+			border-right: 1px solid #eaeaea;
+		}
+	.container.short-resume .row.first .col-sm-5.col-md-5.col-lg-5 {
+			border:  1px solid #eaeaea;
+	}
+	.container.short-resume .cont {
+		height: auto;
+		padding-bottom: 10px;
+
+	}
+	.container.short-resume .row.third .words-of-coach, 
+	.container.short-resume .row.third .contact-me {
+		margin-left: 0px;
+
+
+	}
+	.container.mywork .my-work-margin {
+		margin-top: 82px;
+		margin-left: 10px; 
+	}
+	.container.mywork .row.grows h3,
+	.container.mywork .row.create h3 {
+		margin-top: 10px;
+		text-align: center;
+		font-size: 20px;
+	}
+	.container.mywork ul  {
+		line-height: 20px;
+	}
+	.container.mywork, 
+	.container.stories {
+		margin-top: 20px;
+	}
+	.container.stories .story-cont.first, 
+	.container.stories .story-cont.second, 
+	.container.stories .story-cont.third {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+	.container.stories img {
+		margin-left: auto;
+		
+
+	}
+	.container.contact-me ul {
+		margin-top: 20px;
+		margin-left: 50px;
+	}
+	.container.contact-me h2 {
+		margin-top: 200px;
+	}
+
+
+} 
+@media(max-width: 450px){
+	.presentation .main-info h1 {
+		font-size: 40px;
+	}
+	.container h2 {
+		font-size: 30px;
+		margin-left: 2%;
+	}
+	.container.stories h2 {
+		font-size: 20px;
+
+	}
+	.container.coachses img {
+		width: 100%;
+
+	}
+	.container.rewiew .rew-cont {
+		padding: 10px 0 10px 20px;
+
+	}
+	.container.rewiew .foto-block img {
+		    left: -24px
+	}
+	.container.stories img,
+	.container.contact-me a img {
+		margin-left: auto;
+		width: 100%;
+
+	}
+	.container.stories .story-cont a img {
+		width: auto;
+	}
+
+	
+}
+@media(max-width: 320px) {
+	.navbar-toggle {
+		right: 0;
+	}
+	.container.coachses h2 {
+		font-size: 20px;
+	}
+
+
+}
+
+
