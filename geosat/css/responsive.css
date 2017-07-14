@@ -1,0 +1,138 @@
+/*min width */
+@media (min-width: 768px) {
+.navbar-wrapper {
+    margin-top: 10px;
+}
+.navbar-wrapper .container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+	    margin-left: 5px; 
+
+}
+.carousel-caption{
+	right: 0;
+	left: 24px;
+}
+
+}
+
+
+
+/*max-width*/
+
+@media (max-width: 1200px){
+
+	.position-container {
+	display: none;	
+}
+.position-container.serv,
+.position-container.advan {
+	display: block;
+}
+
+}
+
+@media (max-width: 	767px) {
+
+.container.advantage .advan-block  {
+	    margin-bottom: 0px !important;
+}
+.nav.navbar-nav li:nth-child(2), 
+.nav.navbar-nav li:nth-child(3), 
+.nav.navbar-nav li:nth-child(4),
+.nav.navbar-nav li:last-child {
+  left: 0;
+}
+
+#navbar, 
+.navbar-collapse.collapse.in,
+.navbar-inverse .navbar-collapse, 
+.navbar-inverse .navbar-form {
+	border: none;
+}
+.carousel-caption{
+	right: 0;
+	left: 0;
+}
+.container.countact-us form {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.container.countact-us form img {
+	width: 100%;
+}
+
+} 
+@media (max-width: 991px) {
+
+.container.advantage .advan-block p:last-child{
+display: inline !important;
+} 
+.advan-block{
+	padding-top: 10px !important; 
+}
+.container.advantage .col-md-4 .advan-block p {
+	margin-bottom: 10px;
+
+}
+.container.advantage .advan-block  {
+	    margin-bottom: 20px;}
+.container.advantage .advan-block p {
+	font-size: 20px;
+}
+.advan-container .row:last-child {
+	display: none !important;
+}
+.tel-email-box {
+	margin-left: 0px;
+}
+
+
+}
+@media (max-width: 495px){
+	.carousel h1 {
+		font-size: 25px;
+	}
+	.container.galery img {
+		width: 100%;
+
+	}
+	.container.countact-us form {
+		width: 100%;
+	}
+
+
+
+}
+@media (max-width: 768px) {
+	.nav.navbar-nav li {
+		text-align: right;
+		font-size: 14px;
+	}
+	.navbar-nav>li>a {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.tel-email-box li {
+		text-align: center;
+	}
+
+
+
+}
+@media (max-width: 355px){
+	.navbar-inverse .navbar-brand {
+		margin-left: 0px; 
+	}
+}
+@media (max-width: 300px) {
+	.navbar-inverse .navbar-brand {
+		width: auto;
+	}
+
+
+
+}

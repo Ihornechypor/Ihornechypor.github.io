@@ -1,0 +1,491 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+$gc: #cccccc;
+
+* {box-sizing: border-box;}
+@font-face {
+	font-family: HelveticaNeueLTStd-Lt;
+	src: url(../fonts/HelveticaNeueLTStd-Lt.otf);
+}
+@font-face {
+	font-family: HeliosCond;
+	src: url(../fonts/HeliosCond.ttf);
+}
+@font-face {
+	font-family: HelveticaNeueLTStd-LtIt;
+	src: url(../fonts/HelveticaNeueLTStd-LtIt.otf);
+}
+
+.clear-fix::after,
+.clear-fix::before{
+	content: '';
+	display: table;
+}
+.clear-fix {
+	clear: both;
+}
+.container {
+  font-family: HelveticaNeueLTStd-Lt; 
+  width: 100%;
+  padding: 0px;
+  min-width: 320px; 
+  max-width: 1600px; 
+  margin-bottom: 20px;
+}
+/* under-naw  */
+.under-nav {  
+	padding: 12px 11.78% 15px 11.78%;
+	border-bottom: 1px solid $gc;
+}
+
+
+.left-items ul li,
+.right-items ul li,
+.left-items img,
+.right-items img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.left-items {
+	font-size: 12px;
+	float: left;
+	margin-top: 3px;
+	img:first-child{
+		margin-right: 9px;
+	}
+	img:last-child{
+		margin-left: 6px;
+		margin-right: 20px;
+	}
+	li:first-child{
+		border-right: 1px solid;
+		letter-spacing: 2px;
+		line-height: 1.5;
+	}
+	li:last-child{
+		margin-left: 15px;
+		letter-spacing: 3px;
+		a{
+			color: #000000;
+			text-decoration: underline;
+			&:hover{
+				color: lighten(#000000, 80%);
+			}
+		}
+
+
+	}
+}
+
+.right-items {
+	text-align: right;
+	font-size: 14px;
+
+	li:first-child{
+		margin-right: 25px;
+		img{
+			margin-right: 11px;
+
+		}
+		img:first-child{
+			margin-right: 20px;
+		}
+	}
+	li:nth-child(2){
+		margin-right: 15px; 
+		border-right: 1px solid;
+		padding-right: 16px;
+		padding-left: 18px;
+		img{
+			margin-right: 10px;
+		}
+	}
+	li:last-child{
+		font-family: HeliosCond;
+		font-size: 18px;
+		letter-spacing: -1.5px; 
+		margin-top: 5px;
+		margin-right: 27px;
+
+	}
+
+}
+.site-name{
+	margin: 30px 12%;
+	
+}
+.new-look {
+	text-align: center;
+}
+.text-cont {
+	line-height: 3;
+	color: #787878;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+.text-cont.first {
+	text-align: left;
+}
+.text-cont.last {
+	text-align: right;
+}
+
+/* nav */
+.masthead {
+	margin: 0 10%;
+	margin-bottom: 20px;
+}
+.nav-justified > li > a {
+  font-family: HelveticaNeueLTStd-Lt;
+  font-size: 16px;
+  color: #777;
+  text-align: center;
+}
+
+.nav-justified > li:first-child > a {
+  border-radius: 5px 5px 0 0;
+}
+.nav-justified > li:nth-child(3) {
+  width: 2%; 
+}
+.nav-justified > li:last-child > a {
+  border-bottom: 0;
+  border-radius: 0 0 5px 5px;
+  color:  #9a2722;
+}
+
+/*  jumbotron css*/
+.container .jumbotron {
+	background: url(../img/jumb-bg.png) 0 0 no-repeat;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 259px;
+	padding-bottom: 77px;
+	border-radius: 0px;
+	margin-bottom: 0px;
+
+}
+.shop-now {
+  letter-spacing: 0.18em;
+  font-size: 16px;
+  border: 1px solid;
+  color: #ffffff;
+  padding: 17px 20px;
+  display: inline-block;
+  width: 192px;
+  &:hover {
+    text-decoration: none;
+    color: darken(#ffffff, 20%);
+    }
+
+}  
+.text-box .shop-now.custom:hover {
+	color: #9a2722;
+}  
+
+.jumbotron{
+
+	p {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	margin-bottom: 38px;
+	word-spacing: 4px;	
+	span {
+		letter-spacing: -4px;
+	}
+
+		
+	}	
+
+	h1{
+		font-family: HeliosCond;
+		font-size: 60px;
+		text-transform: uppercase;
+		margin-bottom: 49px;
+	}
+
+	}
+
+
+/*  new-collection css*/
+
+.new-collection {
+	max-width: 1600px;
+	.row{
+	}
+}
+.new-collection {
+	text-align: center;
+}
+.new-season {
+	margin-top: 70px;
+	h3{
+		font-family: HeliosCond;
+		font-size: 40px;
+		font-size: 37px;
+		letter-spacing: 0.0007em;
+	}
+	.info{
+		font-family: HelveticaNeueLTStd-LtIt;
+		margin-top: 20px;
+		letter-spacing: 3px;
+		line-height: 1.5;
+	}
+	.price {
+		font-family: HeliosCond;
+		font-size: 60px;
+		margin-top: 27px;
+		letter-spacing: -0.07em;
+
+
+	}
+	.shop-new {
+		text-transform: uppercase;
+		letter-spacing: 3.5px;
+		color: #000000;
+		display: inline-block;
+		margin-top: 31px;
+		padding: 18px 20px;
+		border: 1px solid;
+		width: 215px;
+		&:hover{
+			text-decoration: none;
+			color: lighten(#000000, 50%);
+		}
+	}
+}
+/*  wear-block css*/
+.wear-block {
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 72px;
+	.col-sm-9.col-md-9.col-lg-9{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.social {
+		margin-top: 85px;
+		margin-bottom: 118px;
+	
+		ul{
+		text-align: center;
+		
+			li{
+			display: inline-block;
+			margin: 0 10px;
+			}
+		}
+		a {
+			padding: 10px;
+			display: block;
+			border: 1px solid;
+			color: black;
+			width: 55px;
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg); 
+			-webkit-transform: rotate(45deg);
+			-o-transform: rotate(45deg); 
+			transform: rotate(45deg);
+			&:hover {
+				color: lighten(black,40%);
+			}
+
+		}
+		i {
+			-moz-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg); 
+			-webkit-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg); 
+			transform: rotate(-45deg);
+
+		}
+		}
+	
+		.guide-box img,
+		.swim-box img, 
+		.man-box img {
+			position: relative;
+			z-index: 2;
+
+		}
+		.swim-box img {
+			margin-right: 16px;
+		}
+
+
+		.guide-box p,
+		.swim-box p, 
+		.man-box p{
+			font-size: 20px;
+			display: block;
+			padding: 20px 0;
+			text-align: center;
+			position: relative;
+			z-index: 3;
+			background: rgba(255, 255, 255, 0.3);
+			font-weight: 700;
+			
+		}
+		.guide-box p,
+		.man-box p{
+			bottom: 58px;
+		}
+		.swim-box p {
+			bottom: 541px;
+		}
+		.man-box span{
+				color: #9a2722;
+		}
+		.swim-box, .man-box {
+			display: inline-block;
+		}
+
+
+		.collection-box {
+			background: url(../img/collection.png) 0 0 no-repeat;
+			margin-top: -50px;
+			text-align: center;
+			color: #ffffff;
+			padding: 122px 100px 113px 383px;
+			.text-box{
+				h3 {
+					font-size: 30px;
+					text-transform: uppercase;
+					margin-bottom: 20px;
+				}
+			p {
+				font-size: 14px;
+				text-transform: uppercase;
+				letter-spacing: 0.2em;
+				margin-bottom: 38px;
+				word-spacing: 4px;
+				span{
+					    letter-spacing: -4px;
+				}
+
+			}
+			}
+		}
+
+}
+/*  carusel css*/
+section {
+.carusel {
+	max-width: 1600px;
+	margin: 0 auto;
+	width: 100%;
+	background-color:  #f7f7f7;
+
+}
+	h2 {
+	font-size: 2.25em;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+
+	}
+}
+/*  world-map   css*/
+.world-map {
+	background:  #f7f7f7;
+	text-align: center;
+	letter-spacing: 0.2em;
+	color: #999999;
+	padding: 50px 0;
+	margin-bottom: 80px;
+	.col-sm-6.col-md-6.col-lg-6
+	{
+		text-align: center;
+	}
+	img{
+		display: inline-block;
+	}
+	h3,
+	a{
+		text-transform: uppercase;
+	}
+	h3 {
+		font-size: 30px;
+		margin-top: 40px;
+		margin-bottom: 30px;
+
+	}
+	P{
+		margin-bottom: 30px;
+	}
+	a {
+		font-size: 16px;
+		color: #999999;
+		border: 1px solid;
+		padding: 10px 20px;
+		&:hover{
+		text-decoration: none;
+		color: darken(#999999, 20%);
+		}
+	}
+}
+/*  contacts  css*/
+.contacts {
+	text-transform: uppercase;
+	.for-free{
+		padding-top: 10px;
+		font-size: 18px;
+		letter-spacing:  0.2em;
+		text-align: right;
+
+	}
+	.click {
+		
+	}
+	.form-inline {
+		text-align: left;
+	}
+	.form-group {
+		width: 70%;
+		.form-control{
+			width: 100%;
+		}
+
+	}
+	.btn.btn-default {
+		width: 25%;
+		background: #333;
+		color: #ffffff;
+		i {
+			margin-right: 10px;
+		}
+	}
+
+
+}
+footer {
+	background:  #1a0000;
+	margin-top: 70px;
+	padding: 10px;
+	color: #ffffff;
+	a {
+		color: #ffffff;
+		&:hover{
+			text-decoration: none;
+			color: darken(#ffffff, 20%);
+		}
+
+	}
+	ul{ text-align: center;
+	 li{
+		display: inline-block;
+		margin: 0 5px;
+	}
+	li:last-child{
+		font-size: 10px;
+		margin-left: 70px;
+	}
+
+	}
+}

@@ -1,0 +1,157 @@
+/*    min width  */
+@media (min-width: 768px) {
+  .nav-justified {
+    max-height: 52px;
+  }
+}
+@media screen and (min-width: 768px) {
+
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 1168px){
+  .wear-block .col-sm-3.col-md-3.col-lg-3:last-child {
+      display: none;
+    }
+
+
+}
+
+/* max-width*/
+
+
+@media (max-width: 1558px){
+  .wear-block {
+    width: 100%;
+    margin-left: 5px;
+  }
+
+}
+
+
+@media (max-width: 1400px){
+  .new-season, 
+  .new-season .info,
+  .new-season .price,
+  .new-season .shop-new {
+    margin-top: 5px;
+  }
+  .new-season .price {
+    font-size: 25px;
+  }
+
+}
+@media (max-width: 1168px){
+  .wear-block .col-sm-3.col-md-3.col-lg-3:first-child {
+      display: none;
+    }
+  .wear-block .col-sm-9.col-md-9.col-lg-9 {
+      text-align: center;
+    }
+}
+
+@media (max-width: 1000px){
+  .under-nav,
+  .site-name, 
+  .masthead {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+  .wear-block .collection-box {
+  padding: 122px 0 113px 100px;
+  color: #9a2722;
+  font-weight: 700;
+}
+.wear-block .collection-box .shop-now {
+  color: #9a2722;
+}
+.contacts .form-group .form-control,
+.contacts .form-group,
+.contacts .btn.btn-default{
+  width: auto;
+}
+}
+@media (max-width: 768px){
+ nav .nav.nav-justified li:nth-child(3) {
+  width: auto;
+}
+.text-cont.first,
+.text-cont.last{
+  text-align: center;
+  font-weight: bold;
+  color: #9a2722;
+}
+.foto-new-season img{
+  width: 100%;
+
+}
+.new-season {
+  margin-bottom: 10px;
+}
+.wear-block .col-sm-3.col-md-3.col-lg-3:last-child{
+  text-align: center;
+}
+.wear-block .col-sm-3.col-md-3.col-lg-3:last-child .guide-box img{
+  display: inline-block;
+}
+  .wear-block .swim-box img {
+    margin-right: 0px;
+  }
+  .contacts .for-free,
+  .contacts .form-inline,
+  .click
+
+   {
+    text-align: center;
+  }
+  .form-group {
+    display: inline-block;
+    margin: 10px 0;
+  }
+
+}
+
+@media (max-width: 645px){
+  .container .jumbotron {
+    padding-top: 50px;
+  }
+  .left-items {
+    float: none;
+  }
+  .left-items, .right-items{
+    text-align: center;
+    padding: 10px 0;
+  }
+  .right-items li:nth-child(2),
+  .left-items li:first-child{
+    border: none;
+  }
+  .wear-block .collection-box {
+    padding: 122px 0 113px 0;
+    
+  
+}
+
+}
+
+@media (max-width: 392px){
+  .container .jumbotron {
+    padding-top: 50px;
+  }
+  .left-items li:last-child{
+    margin-left: 0px;
+  }
+  .new-look img{
+    width: 90%;
+
+  }
+
+
+}
