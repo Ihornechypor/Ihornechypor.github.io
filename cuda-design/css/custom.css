@@ -1,0 +1,444 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {padding-top: 50px;padding-bottom: 20px; min-width: 380px;}
+
+.container.header { background-color: #87509c;}
+ul.nav-pills.pull-right > li > a {font-family: 'Titillium Web', sans-serif;color: #ffffff; text-transform: uppercase;} 
+ul.nav-pills.pull-right > li > a:hover {color: white;background-color: #643a79;}
+/*ul.nav-pills.pull-right {margin: 3.15% 17.056% 3.15% 0;}*/
+ul.nav-pills.pull-right {padding: 10px 0;}
+
+.header.clearfix  img {margin: 10px 0 0 8%;}
+	
+
+.navbar.navbar-inverse.navbar-fixed-top {
+	padding: 10px 0;
+}
+.navbar {
+	background: #87509c;
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	border: none; 
+
+
+}
+/* start jumbotron css*/
+
+.container.jumbotron {
+max-width: 1140px; 
+background-color: #87509c;
+margin-bottom: 0}
+.container.jumbotron h1 {
+font-family: 'Titillium Web', sans-serif; 
+font-size: 42px;
+text-align: center;
+color: #ffffff;
+font-weight: bold; 
+margin-top: 50px;
+}
+.container.jumbotron  p  {
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: bold;
+}
+.container.jumbotron  a{
+	margin-top: 51px;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+
+
+
+
+/* end jumbotron css*/
+/* start providers css*/
+.container.providers{
+	padding-top: 100px;
+	background-color: #17c2a4;
+	max-width: 1140px;
+
+}
+.container.providers h2  {
+	background-color: #17c2a4;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+;
+}
+.container.providers hr {
+	width: 7.6315%;
+	height: 4px;
+	background-color: #14a58c;
+	border: none;
+
+}
+.container.providers p {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: #ffffff;
+}
+.col-md-3 {
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+}
+.row .col-md-3 {margin-top: 80px; margin-bottom: 127px;}
+.row .col-md-3 .img-responsive {margin: 0 auto;}
+.row .col-md-3 h2{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 62px;
+}
+.row .col-md-3 p {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+}
+/* end provirs css*/
+
+/* start team css*/
+.container.team {
+	max-width: 1140px;
+	padding-top: 120px;
+	background-color: #e7f1f8;
+}
+.container.team h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 42px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #3c4761;
+	text-align: center;
+
+}
+.container.team hr {
+	width: 7.6315%;
+	height: 4px;
+	background-color: #c8d9e5;
+	border: none;
+
+}
+.container.team .teaminfo{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 19px;
+	text-align: center;
+	color: #3c4761;
+}
+.circle {width: 200px;
+	height: 200px;
+	background: #878787;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	margin: 0 auto;
+}
+.container.team h3 {
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #3c4761;
+	text-align: center;
+
+}
+ .container.team .blue{
+	font-size: 16px;
+	font-weight: 400;
+	color: #30bae7;
+	margin-top: 17px;
+	margin-bottom: 31px;
+}
+.container.team .info {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	color: #3c4761;
+
+}
+
+.container.team a {
+	text-decoration: none;
+	color: #bdd1df;
+}
+.container.team a:hover {
+	text-decoration: none;
+	color: #30bae7;
+}
+/* end team css  */
+/* start skeels css  */
+.container.skills {
+	margin: 0 auto;
+	max-width: 1140px;
+	padding-top: 117px;
+}
+.container.skills h2 {
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #3c4761;
+	text-align: center;
+}
+.container.skills hr{
+	width: 7.6315%;
+	height: 4px;
+	background-color: #dfe8ed;
+	border: none;
+
+}
+.container.skills  .skilsinfo {
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	color: #3c4761;
+}
+
+.container.skills  .perks {
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #3c4761;
+}
+/* end skeels css  */
+/* start portfolio css  */
+.container.portfolio {
+
+	padding-top: 120px;
+	padding-bottom: 100px;
+	background-color: #ffdd99;
+	max-width: 1140px;
+}
+
+.container.portfolio h2 {
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #3c4761;
+	text-align: center;
+
+}
+
+.container.portfolio hr {
+	width: 7.6315%;
+	height: 4px;
+	background-color: #e5c37f;
+	border: none;
+}
+
+.container.portfolio .portfolioinfo {
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	color: #3c4761;
+}
+.container.portfolio .templates {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #3c4761;
+	text-align: center;
+	padding-top: 32px;
+	padding-bottom: 64px;
+}
+ .container.portfolio .text-center  {
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: bold;
+
+ }
+.container.portfolio .col-md-6 img{
+	margin: 0 auto;
+}
+/* end portfolio css  */
+/* start featback css  */
+
+.container.featback{
+	padding-top: 120px;
+	padding-bottom:  110px;
+	max-width: 1140px;
+	background-color:  #d74680;
+}
+
+.container.featback h2 {
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+
+}
+
+.container.featback hr {
+	width: 7.6315%;
+	height: 4px;
+	background-color: #b73c6d;
+	border: none;
+}
+
+.container.featback .clients {
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	color: #ffffff;
+	margin-bottom: 70px
+
+
+}
+.container.featback .circlephoto {
+
+	width: 100px;
+	height: 100px;
+	background: #878787;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	margin: 0 auto;
+}
+
+.container.featback .col-md-4 p:first-child {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 21px;
+	font-weight: italic;
+	color: #ffffff;
+	margin-bottom: 24px;
+
+}
+.container.featback .col-md-4 p:nth-child(2) {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin: 0;
+}
+.container.featback .col-md-4 p:last-child {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+	color: #fac996;
+}
+/* end featback css  */
+/* start contact css  */ 
+
+.container.contacts {
+	padding-top: 100px;
+	max-width: 1140px;
+	background-color:  #3c5499;
+	padding-bottom: 100px;
+}
+
+.container.contacts h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+}
+
+.container.contacts hr {
+	width: 7.6315%;
+	height: 4px;
+	background-color: #273a71;
+	border: none;
+}
+.container.contacts p {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 70px;
+}
+.container.contacts .form-control {
+	background-color: #273a71;
+	border:none;
+	resize: none;
+}
+.container.contacts .btn.btn-info {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 16px;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+/* end contact css  */ 
+/* start footer social css  */ 
+
+.container.social {
+background-color: #344b8e;
+max-width: 1140px;
+padding-top: 49px;
+padding-bottom: 35px;
+
+}
+.container.social {
+	text-align: center;
+	word-spacing: 30px;
+}
+
+.container.social ul li {
+	display: inline-block;
+	list-style-type: none;
+
+}
+.container.social ul li a {
+	font-family: 'Titillium Web', sans-serif;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 24px;
+	text-decoration: none;
+}
+.container.social ul li a:hover {
+	color: #30bae7 ;
+
+}
+/* end footer social css  */ 
+@media (max-width: 528px){
+	.header.clearfix  img{
+		width: 18%;
+		display: block;
+		margin: 0 auto;
+	}
+	ul.nav-pills.pull-right{
+		text-align: center;
+	}
+	ul.nav-pills.pull-right li{
+		float: none;
+		display: inline-block;
+		
+	}
+	.navbar.navbar-inverse.navbar-fixed-top .pull-right {
+		 float: none !important;
+	}
+}
+@media (max-width: 400px) {
+	.navbar-fixed-top {
+		position: static;
+	}
+	
+	
+}
+@media (max-width: 1200px) {
+.container.header .navbar{
+	max-width: 970px;
+} 
+}
+@media (max-width: 991px) {
+.container.header .navbar{
+	max-width: 750px;
+} 
+}
+
