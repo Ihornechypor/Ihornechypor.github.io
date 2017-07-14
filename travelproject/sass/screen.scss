@@ -1,0 +1,385 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
+
+
+@font-face {
+    font-family: DroidSerif-Bold;
+    src: url(../fonts/DroidSerif-Bold.ttf);
+}
+@font-face {
+    font-family: DroidSerif-Bolditalic;
+    src: url(../fonts/DroidSerif-Bolditalic.ttf);
+}
+@font-face {
+    font-family: DroidSerif-italic;
+    src: url(../fonts/DroidSerif-italic.ttf);
+}
+@font-face {
+    font-family: DroidSerif;
+    src: url(../fonts/DroidSerif.ttf);
+}
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: Raleway-regular;
+    src: url(../fonts/Raleway-regular.ttf);
+}
+$center-margin: 0 auto;
+$main-font-color: #ac752f;
+$white-color: #fff;
+$lightgray: #373737;
+$color-for-hdngs: #ad7835;
+$color-for-text:  #d9d9d9;
+
+.page-wrapper, 
+.header-container,
+.about-section,
+.article-section, 
+.galery-section,
+.contact-section {
+margin: $center-margin;
+}
+.about-section, 
+.article-section,
+.galery-section,
+.contact-section {
+width: 65.1%;
+ 
+}
+a.read-more, 
+a.show-more,
+.submit-button {  
+	display: block;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	width: 41.76334107%;
+	font-family: Raleway-Bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: $color-for-hdngs;
+	border: 1px solid  $color-for-hdngs;
+}
+a.show-more {
+	width: 10%;
+	margin: 0 auto;
+}
+.submit-button {
+	background: $lightgray;
+	border: 1px solid  $color-for-hdngs;
+
+}
+.page-wrapper {
+	width: 100%; 
+	max-width: 2000px; 
+	
+	background:  url(../img/background_2000px-min.png) 0 0 no-repeat;
+	background-size: cover; 
+
+}	
+header { 
+	padding-top: 173px;
+	text-align: center;
+ 
+}
+h2{
+	font-family: DroidSerif;
+	font-size: 60px;
+	color: $color-for-hdngs;
+}
+.like-line {
+	border-top: 3px solid $color-for-hdngs;
+	width: 21.1136891%;
+}
+.like-line.custom {
+	width: 8.113689%;
+}
+
+ .header-container {
+		width: 48.2%;
+		border: 10px solid #ad7835;
+		color: $white-color; 
+		p:first-child, p:last-child {
+			font-family: Raleway-Bold;
+			text-transform: uppercase;
+			font-size: 24px;
+		}
+		p:first-child{
+			margin-top: 80px;
+			margin-bottom: 4px;
+		}
+		p:last-child {
+			color: $main-font-color;
+			margin-top: 20px;
+			margin-bottom: 90px;
+		}
+		h1 {
+			font-family: DroidSerif;
+			font-size: 185px;
+		}
+		hr{
+			width: 4.55%;
+			height: 3px;
+			border: none;
+			background-color: $white-color;
+		}
+
+ } 
+
+.about-section {
+
+margin-top: 300px;
+
+.about-info {
+	background: $lightgray;
+	height: 558px;
+	text-align: center;
+
+	.ab-text, 
+	.ab-foto {
+		display: inline-block;
+ 
+
+	}
+	.ab-text{
+		width: 35.33026114%;
+		vertical-align: top; 
+		text-align: left;
+		margin: 66px 8.21812596% 57px 5.376344086%;
+
+
+     	p {
+     		font-family: Raleway-regular;
+     		font-size: 16px;
+     		color: #d9d9d9;
+     		margin: 40px 0;
+     	}
+
+     	a:hover {
+     		color: darken($color-for-hdngs, 9%);
+     	}
+     }
+     .ab-foto {
+     	position: relative;
+     	top: -50px;
+     	width: 45.16129032%;
+     	 img{
+     		width: 100%;
+     	}
+     }
+}
+
+}
+.gray-bg,
+.img-article {
+	position: relative;
+}
+.img-article {
+	margin-left: 13px;
+}
+.gray-bg {
+	width: 338px;
+	height: 256px;
+	background: $lightgray;
+}
+.gray-bg {
+	top: 220px;
+	right: 7px;
+}
+
+.article-section {
+	margin-top: 290px;
+	text-align: center;
+	.h2-container{
+	display: inline-block;
+	text-align: center;
+    }
+}
+.articles-container {
+	margin-top: -150px;
+	.article {
+		width:370px;
+		display: inline-block;
+		margin: 0 20px;
+
+
+		h4{
+			color: $color-for-hdngs;
+			font-family: DroidSerif;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		hr {
+			background: $color-for-hdngs;
+			border: none;
+			height: 3px;
+		}
+		p {
+			font-family: Raleway-regular;
+			font-size: 16px;
+			line-height: 28px;
+			color: $color-for-text;
+			text-align: left;
+			padding-bottom: 20px;
+
+		}
+
+		a {
+			font-family: Raleway-Bold;
+			font-size: 16px;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $color-for-hdngs; 
+			text-align: left;
+			span {
+				padding-left: 10px; 
+			}
+
+		}
+		a:hover {
+			color: darken($color-for-hdngs, 9%);
+		}
+	}
+}
+
+.galery-section {
+	margin-top: 200px;
+	.img-container {
+		width: 33.56374808%;
+		display: inline-block;
+		text-align: right;
+		margin-right: 8px;
+		 img:first-child {
+		 margin: 70px 30px 30px 0;
+	     }
+	     img:last-child {
+		  margin: 30px 30px 30px 0;
+	     }
+	}
+	.bigimages {
+		width: 60.51459293%;
+		text-align: left;
+		vertical-align: top;
+		display: inline-block;
+		font-size: 0px;
+		
+		img:first-child {
+		margin: 30px 30px 30px 0;
+	    }
+	    img:nth-child(2),img:nth-child(3), img:nth-child(4), img:nth-child(5){
+		margin-bottom: 30px; 
+	    }
+	    img:nth-child(4){
+	    	margin-right: 30px;
+	    }
+	   
+	    img:nth-child(5) {
+	    	vertical-align: top;
+
+	    }
+	}
+}
+
+
+
+
+.contact-section {
+	margin-top: 250px;
+	.contact-me { 
+		text-align: center; 
+		background: #373737;
+		height: 558px;
+		.contact-me-foto,
+		.contact-me-form { 
+			display: inline-block;
+			vertical-align: top;
+		}
+		.contact-me-foto {
+			position: relative;
+			top: -50px;
+			width: 45.16129032%;
+			img {
+				width: 100%;
+			}
+		}
+		.contact-me-form {
+			width: 35.33026114%; 
+			margin: 66px 8.21812596% 57px 5.376344086%;   
+		}
+		h2 {
+			text-align: left; 
+		}
+		.main-info {
+			margin: 40px 0;
+			text-align: left;
+		}
+		.main-info .name,
+		.main-info .email,
+		textarea{
+		background: #373737; 
+
+		}
+		.main-info .name[placeholder],
+		.main-info .email[placeholder],textarea  {
+		font-family: Raleway-regular;
+		font-size: 15px;
+		padding-bottom: 20px;
+		color: #fff;
+		}
+		input, textarea {
+			border: none;
+			resize: none;
+			height: auto;
+
+		}
+		textarea {
+			width: 100%;
+		}
+		input.name, input.email{
+			margin: 0 10px;
+			width: 40%;
+			border-bottom: 1px solid #fff;
+
+		}
+
+	}
+
+}
+footer {
+	margin-top: 250px;
+	ul{
+		text-align: center;
+		li{
+			display: inline-block;
+			border: 1px solid;
+			color: $color-for-hdngs;
+			margin: 0 20px;
+			padding: 5px;
+			a {
+				color: $color-for-hdngs;
+				:hover {
+					color: darken($color-for-hdngs, 15%);
+
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
