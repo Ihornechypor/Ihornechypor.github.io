@@ -46,7 +46,7 @@
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li>
-                  <a class="order-btn" href="/" role="button" data-toggle="modal" data-target="#order_modal">ЗАКАЗАТЬ</a>
+                   <button class="order-btn" role="button" data-toggle="modal" data-target="#order_modal">ЗАКАЗАТЬ</button>
                 </li>
               </ul>
             </div><!--/.nav-collapse -->
@@ -56,7 +56,7 @@
           <h1>Мы открылись!</h1>
           <div class="gallery-look">Загляните в нашу галлерею, там много разных вкуснях,<br> которые Вы можете заказать и скушать :)</div>
           <div class="make-order">
-            <a class="order-btn" href="/" role="button" data-toggle="modal" data-target="#order_modal">ЗАКАЗАТЬ</a>
+            <button class="order-btn" role="button" data-toggle="modal" data-target="#order_modal">ЗАКАЗАТЬ</button>
           </div>
         </section>
         <section class="next-holidays">
@@ -1031,13 +1031,13 @@
               <div class="col-md-4 col-lg-4 text-center">
                 <div class="form-group">
                  <label for="exampleInputName3">Имя</label>
-                 <input type="text" class="form-control" id="exampleInputName3" placeholder="Яна">
+                 <input type="text" class="form-control" id="exampleInputName3" placeholder="Яна" required>
                </div>
              </div>
              <div class="col-md-4 col-lg-4 text-center">
               <div class="form-group">
                 <label for="exampleInputTel">Телефон</label>
-                <input type="tel" class="form-control" id="exampleInputTel" placeholder="+380931154756">
+                <input type="tel" class="form-control" id="exampleInputTel" placeholder="+380931154756" required>
               </div>
             </div>
             <div class="col-md-4 col-lg-4 text-center">
@@ -1051,7 +1051,7 @@
             <div class="col-md-12 col-lg-12">
               <div class="form-group order_details">
                <label for="order_details">Сообщение</label>
-               <textarea class="form-control" id="order_details" placeholder="Для того что-бы совершить заказ, опишите его как можно более детально или напишите артикулы продуктов которые Вас заинтересовали, с исправлениями которые Вы хотите видеть на своем изделии." ></textarea>
+               <textarea class="form-control" id="order_details" placeholder="Для того что-бы совершить заказ, опишите его как можно более детально или напишите артикулы продуктов которые Вас заинтересовали, с исправлениями которые Вы хотите видеть на своем изделии." required></textarea>
              </div>
            </div>
            <div class="col-md-12 col-lg-12 text-center"><button type="submit" class="order-btn" data-toggle="modal" data-target="#email_success_modal">ОТПРАВИТЬ</button></div>
