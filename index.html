@@ -1263,9 +1263,9 @@ wa.afterInit = function()
   wa.bt_queue.push(JSON_OBJECT);
 }
 function cartted(){
-BT.addCartItems(cart,items, isTargeting);
-BT.removeCartItems(cart,items, isTargeting); 
-BT.checkoutCart(cart, isTargeting);
+BT.addCartItems(ABANDONED_CART_CART,items, isTargeting);
+BT.removeCartItems(ABANDONED_CART_CART,items, isTargeting); 
+BT.checkoutCart(ABANDONED_CART_CART, isTargeting);
 
 }
 
