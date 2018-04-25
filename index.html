@@ -1255,7 +1255,7 @@
 
 
       });
-                    var wa = document.createElement("script"), 
+var wa = document.createElement("script"), 
     wa_s = document.getElementsByTagName("script")[0]; 
 wa.src = "https://targetemsecure.blob.core.windows.net/9bc64e59-23bc-46aa-8177-fa08101759d4/9bc64e5923bc46aa8177fa08101759d4_1.js"; 
 wa.type = "text/javascript"; 
@@ -1264,12 +1264,6 @@ wa.bt_queue = [];
 wa.afterInit = function()
 {
   wa.bt_queue.push(JSON_OBJECT);
-}
-function cart(){
-wa.addCartItems(ABANDONED_CART_CART,items, isTargeting);
-wa.removeCartItems(ABANDONED_CART_CART,items, isTargeting); 
-wa.checkoutCart(ABANDONED_CART_CART, isTargeting);
-
 }
 
 
