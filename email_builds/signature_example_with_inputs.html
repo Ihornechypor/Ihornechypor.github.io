@@ -1,0 +1,179 @@
+
+<div class="wrapper">
+  <table style="border-collapse: collapse; border-spacing: 0; padding: 0">
+    <tr style="padding: 0">
+      <td style="color: #000001; font-family: Arial,sans-serif; font-size: 16px; line-height: 1.2; margin-bottom: 1px; margin-left: 1px; margin-right: 1px; margin-top: 1px; mso-line-height-rule: exactly; padding-top: 24px">
+        <b class="data-change name">Name SecondName</b>
+      </td>
+    </tr>
+    <tr style="padding: 0">
+      <td style="color: #000001; font-family: Arial,sans-serif; font-size: 14px; line-height: 1.2; margin-bottom: 1px; margin-left: 1px; margin-right: 1px; margin-top: 1px; mso-line-height-rule: exactly">
+        <i class="data-change position">Postion</i>
+      </td>
+    </tr>
+    <tr style="padding: 0">
+      <td style="color: #000001; font-family: Arial,sans-serif; font-size: 14px; line-height: 1.2; margin-bottom: 1px; margin-left: 1px; margin-right: 1px; margin-top: 1px; mso-line-height-rule: exactly; padding-top: 10px">
+        <table style="border-collapse: collapse; border-spacing: 0; padding: 0">
+          <tr style="padding: 0">
+            <td style="color: #000001; font-family: Arial,sans-serif; font-size: 14px; line-height: 1.2; margin-bottom: 1px; margin-left: 1px; margin-right: 1px; margin-top: 1px; mso-line-height-rule: exactly">
+              <i class="data-change group">Additional information</i>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr style="padding: 0">
+      <td style="color: #000001; font-family: Arial,sans-serif; font-size: 14px; line-height: 1.2; margin-bottom: 1px; margin-left: 1px; margin-right: 1px; margin-top: 1px; mso-line-height-rule: exactly; padding-top: 5px">
+        <a href="https://ichf.edu.pl/" target="_blank" class="t" style="color: #8b132d; text-decoration: none">
+          <i>Company name</i>
+        </a>
+      </td>
+    </tr>
+    <tr style="padding: 0">
+      <td style="color: #000001; font-family: Arial,sans-serif; font-size: 14px; line-height: 1.2; margin-bottom: 1px; margin-left: 1px; margin-right: 1px; margin-top: 1px; mso-line-height-rule: exactly">
+        <i> Company address </i>
+      </td>
+    </tr>
+    <tr style="padding: 0">
+      <td style="color: #000001; font-family: Arial,sans-serif; font-size: 14px; line-height: 1.2; margin-bottom: 1px; margin-left: 1px; margin-right: 1px; margin-top: 1px; mso-line-height-rule: exactly; padding-top: 10px">
+        <a href="https://ichf.edu.pl/" target="_blank" style="color: #8b132d; text-decoration: none">
+          <img src="https://i.ibb.co/88FvqnN/logo.png" alt width="200" style="-ms-interpolation-mode: bicubic; clear: both; display: block; max-width: 100%; outline: 0; text-decoration: none; width: 200px">        </a>
+      </td>
+    </tr>
+    <tr style="padding: 0">
+      <td style="color: #000001; font-family: Arial,sans-serif; font-size: 14px; line-height: 1.2; margin-bottom: 1px; margin-left: 1px; margin-right: 1px; margin-top: 1px; mso-line-height-rule: exactly; padding-top: 10px">
+        <i>
+          <small>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+            Repudiandae, vero. Accusantium enim corporis, sunt dolor iure,<br>
+            praesentium a repellat eius nesciunt cupiditate mollitia qui ex<br>
+            beatae! Esse animi possimus quibusdam.
+          </small>
+        </i>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="inputs_box" style="display: flex; flex-direction: column; margin-top: 80px; max-width: 420px; width: 100%">
+  <div class="label">
+    Name
+    <div>
+      <input type="text" class="inputs name" placeholder="name" value="Name SecondName" style="font-size: 18px; margin-top: 10px">
+    </div>
+  </div>
+  <div class="label" style="margin-top: 10px">
+    Position
+    <div class="inputWrap">
+      <input type="text" class="position inputs" placeholder="position" value="Postion" style="font-size: 18px; margin-top: 10px">
+    </div>
+  </div>
+  <a class="safe-sign-with-data" style="background-color: red; color: #fff; cursor: pointer; display: inline-block; margin-top: 10px; padding: 20px; text-decoration: none">
+    Safe Data
+  </a>
+  <a class="safe-sign" style="background-color: blue; color: #fff; cursor: pointer; display: inline-block; margin-top: 10px; padding: 20px; text-decoration: none">
+    Safe Signature
+  </a>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", (event) => {
+      const saveBtn = document.querySelector(".safe-sign");
+      const saveBtnWithData = document.querySelector(".safe-sign-with-data");
+      const inputs = document.querySelectorAll(".inputs");
+      const datas2 = document.querySelectorAll(".data-change");
+
+      // handle delete items
+      const deletableFileds = document.querySelectorAll(".deletable");
+      const deletableBtns = document.querySelectorAll("[data-del]");
+      const addBtns = document.querySelectorAll("[data-add]");
+      const itemsThatDeleted = {};
+
+      deletableBtns.forEach((item) => {
+        item.addEventListener("click", () => {
+          const itemForDelete = document.querySelector(`.${item.dataset.del}`);
+          if (itemForDelete) {
+            itemsThatDeleted[item.dataset.del] = {
+              parnet: itemForDelete.parentNode,
+              item: itemForDelete,
+            };
+            itemForDelete.remove();
+          }
+        });
+      });
+
+      addBtns.forEach((item) => {
+        item.addEventListener("click", () => {
+          const itemToAdd = itemsThatDeleted[item.dataset.add];
+
+          if (itemToAdd) {
+            const parent = itemToAdd.parnet;
+            parent.insertBefore(
+              itemToAdd.item,
+              parent.children[
+                item.dataset.addPostion ? item.dataset.addPostion : 0
+              ]
+            );
+          }
+        });
+      });
+
+      inputs.forEach((item) => {
+        item.addEventListener("change", (e) => {
+          datas2.forEach((itemC) => {
+            if (itemC.classList.contains(item.placeholder)) {
+              if (itemC.classList.contains("trim")) {
+                const trimTel = e.target.value.replace(/\D/g, "");
+                itemC.href = `tel:+${trimTel}`;
+                itemC.textContent = e.target.value;
+              } else if (itemC.classList.contains("imgSrc")) {
+                itemC.src = e.target.value;
+              } else if (itemC.classList.contains("hrefLink")) {
+                itemC.href = e.target.value;
+              } else if (itemC.classList.contains("uEmail")) {
+                itemC.href = `mailto:${e.target.value}`;
+                itemC.textContent = e.target.value;
+              } else {
+                itemC.textContent = e.target.value;
+              }
+            }
+          });
+          e.target.setAttribute("value", e.target.value);
+        });
+      });
+
+      //save signature
+      saveBtn.addEventListener("click", () => {
+        const body = document.querySelector(".wrapper").innerHTML;
+
+        let tempLink = document.createElement("a");
+
+        let taBlob = new Blob([body], { type: "text/plain" });
+
+        tempLink.setAttribute("href", URL.createObjectURL(taBlob));
+
+        tempLink.setAttribute("download", `yourSignature.html`);
+
+        tempLink.click();
+
+        URL.revokeObjectURL(tempLink.href);
+      });
+
+      saveBtnWithData.addEventListener("click", () => {
+        const body = document.querySelector(".wrapper_ot").innerHTML;
+        const wrapper = `<div class="wrapper_ot" style="display: flex; gap:30px;">${body}</div>`;
+
+        let tempLink = document.createElement("a");
+
+        let taBlob = new Blob([wrapper], { type: "text/plain" });
+
+        tempLink.setAttribute("href", URL.createObjectURL(taBlob));
+
+        tempLink.setAttribute("download", `yourSignatureWithNewData.html`);
+
+        tempLink.click();
+
+        URL.revokeObjectURL(tempLink.href);
+      });
+    });
+  </script>
+</div>
+
